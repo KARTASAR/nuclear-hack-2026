@@ -1,0 +1,5 @@
+strategy,avg_lock_overall_mean,avg_lock_worst_mean,avg_lock_win_rate
+h1_router_fb_cortex_striatum,0.7279770673664352,0.6914248309029201,0.825
+h1_primary_proxy_top3_top4_a007,0.6653493496107934,0.6273365941420546,0.175
+h1_fallback_proxy_top1_top1_a017,0.59195899885239,0.5068713727709331,0.0
+h1_router_fb_cerebellum,0.5339768998721689,0.45036180732638187,0.0

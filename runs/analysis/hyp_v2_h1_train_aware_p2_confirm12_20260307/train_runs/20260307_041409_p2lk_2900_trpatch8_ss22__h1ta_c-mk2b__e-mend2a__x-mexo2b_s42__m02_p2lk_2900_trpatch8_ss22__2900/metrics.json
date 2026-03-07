@@ -1,0 +1,267 @@
+{
+  "accuracy": 0.5853658536585366,
+  "macro_f1": 0.4661246612466125,
+  "weighted_f1": 0.462819750148721,
+  "balanced_accuracy": 0.5833333333333334,
+  "log_loss": 0.9026962546383865,
+  "confusion_matrix": [
+    [
+      0,
+      12,
+      16
+    ],
+    [
+      0,
+      18,
+      6
+    ],
+    [
+      0,
+      0,
+      30
+    ]
+  ],
+  "classification_report": {
+    "control": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 28.0
+    },
+    "endo": {
+      "precision": 0.6,
+      "recall": 0.75,
+      "f1-score": 0.6666666666666666,
+      "support": 24.0
+    },
+    "exo": {
+      "precision": 0.5769230769230769,
+      "recall": 1.0,
+      "f1-score": 0.7317073170731707,
+      "support": 30.0
+    },
+    "accuracy": 0.5853658536585366,
+    "macro avg": {
+      "precision": 0.39230769230769225,
+      "recall": 0.5833333333333334,
+      "f1-score": 0.4661246612466125,
+      "support": 82.0
+    },
+    "weighted avg": {
+      "precision": 0.3866791744840525,
+      "recall": 0.5853658536585366,
+      "f1-score": 0.462819750148721,
+      "support": 82.0
+    }
+  },
+  "auc_ovr_macro": 0.8238149621770313,
+  "folds": [
+    {
+      "fold": 1,
+      "n_train": 64,
+      "n_train_after_outlier": 64,
+      "n_train_outlier_removed": 0,
+      "n_valid": 18,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.25,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.3333333333333333,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 2,
+      "n_train": 64,
+      "n_train_after_outlier": 64,
+      "n_train_outlier_removed": 0,
+      "n_valid": 18,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.4,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.6666666666666666,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 3,
+      "n_train": 64,
+      "n_train_after_outlier": 64,
+      "n_train_outlier_removed": 0,
+      "n_valid": 18,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.4,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.6666666666666666,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 4,
+      "n_train": 70,
+      "n_train_after_outlier": 70,
+      "n_train_outlier_removed": 0,
+      "n_valid": 12,
+      "n_train_groups": 8,
+      "n_valid_groups": 1,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "accuracy": 1.0,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 5,
+      "n_train": 66,
+      "n_train_after_outlier": 66,
+      "n_train_outlier_removed": 0,
+      "n_valid": 16,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.2727272727272727,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.375,
+      "auc_ovr_macro": NaN
+    }
+  ],
+  "class_to_int": {
+    "control": 0,
+    "endo": 1,
+    "exo": 2
+  },
+  "n_samples": 118,
+  "n_features_raw": 1015,
+  "n_cv_samples": 82,
+  "n_holdout_samples": 36,
+  "holdout_groups": [
+    "mk2b",
+    "mend2a",
+    "mexo2b"
+  ],
+  "outlier_filter": "none",
+  "region_metrics_cv": {
+    "cerebellum": {
+      "n_samples": 28,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 10,
+        "endo": 6,
+        "exo": 12
+      },
+      "macro_f1": 0.5686274509803922,
+      "balanced_accuracy": 0.6666666666666666,
+      "accuracy": 0.6428571428571429,
+      "auc_ovr_macro": 0.888888888888889
+    },
+    "cortex": {
+      "n_samples": 36,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 12,
+        "endo": 12,
+        "exo": 12
+      },
+      "macro_f1": 0.38888888888888884,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.5,
+      "auc_ovr_macro": 0.8055555555555557
+    },
+    "striatum": {
+      "n_samples": 18,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 6,
+        "endo": 6,
+        "exo": 6
+      },
+      "macro_f1": 0.5555555555555555,
+      "balanced_accuracy": 0.6666666666666666,
+      "accuracy": 0.6666666666666666,
+      "auc_ovr_macro": 0.8333333333333334
+    }
+  },
+  "local_holdout_metrics": {
+    "accuracy": 0.3333333333333333,
+    "macro_f1": 0.16666666666666666,
+    "weighted_f1": 0.16666666666666666,
+    "balanced_accuracy": 0.3333333333333333,
+    "log_loss": 1.1008669774904725,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        12
+      ],
+      [
+        0,
+        0,
+        12
+      ],
+      [
+        0,
+        0,
+        12
+      ]
+    ],
+    "classification_report": {
+      "control": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 12.0
+      },
+      "endo": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 12.0
+      },
+      "exo": {
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1-score": 0.5,
+        "support": 12.0
+      },
+      "accuracy": 0.3333333333333333,
+      "macro avg": {
+        "precision": 0.1111111111111111,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.16666666666666666,
+        "support": 36.0
+      },
+      "weighted avg": {
+        "precision": 0.1111111111111111,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.16666666666666666,
+        "support": 36.0
+      }
+    },
+    "auc_ovr_macro": 0.7442129629629629
+  },
+  "region_metrics_holdout": {
+    "cortex": {
+      "n_samples": 18,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 6,
+        "endo": 6,
+        "exo": 6
+      },
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "accuracy": 0.3333333333333333,
+      "auc_ovr_macro": 0.7314814814814815
+    },
+    "striatum": {
+      "n_samples": 18,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 6,
+        "endo": 6,
+        "exo": 6
+      },
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "accuracy": 0.3333333333333333,
+      "auc_ovr_macro": 0.7361111111111112
+    }
+  }
+}

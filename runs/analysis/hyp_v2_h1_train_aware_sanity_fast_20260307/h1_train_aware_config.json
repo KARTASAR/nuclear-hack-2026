@@ -1,0 +1,35 @@
+{
+  "sample_meta": "runs/20260306_213305_v1_smoke_center1500_fast/sample_meta.parquet",
+  "sample_meta_with_region": "runs/analysis/hyp_v2_h1_train_aware_sanity_fast_20260307/sample_meta_with_region.parquet",
+  "configs_1500": [
+    "configs/experiment/protocol5_core/p5_1500_file_mean_arpls_msc_catboost.yaml"
+  ],
+  "configs_2900": [
+    "configs/experiment/protocol5_core/p5_2900_file_mean_airpls_snv_logreg.yaml"
+  ],
+  "fallback_topk_1500": 1,
+  "fallback_topk_2900": 1,
+  "primary_topk_1500": 1,
+  "primary_topk_2900": 1,
+  "fallback_alpha_1500": 0.17,
+  "primary_alpha_1500": 0.07,
+  "fallback_name": "fallback_top1_top1_a017",
+  "primary_name": "new_primary_top3_top4_a007",
+  "router_name": "h1_router_fb_cortex_striatum",
+  "router_fallback_regions": [
+    "cortex",
+    "striatum"
+  ],
+  "include_cerebellum_router": false,
+  "include_negative_controls": true,
+  "balanced_n_total": 24,
+  "balanced_min_full_region": 12,
+  "balanced_min_cerebellum_stress": 8,
+  "balanced_min_mk3_control": 4,
+  "balanced_seed": 42,
+  "max_triplets": 8,
+  "triplet_sample_seed": 42,
+  "seed_base": 42,
+  "vary_seed_by_triplet": false,
+  "n_triplets": 8
+}

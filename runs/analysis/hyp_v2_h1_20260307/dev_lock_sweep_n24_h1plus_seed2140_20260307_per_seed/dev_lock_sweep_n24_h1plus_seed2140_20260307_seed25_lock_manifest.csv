@@ -1,0 +1,9 @@
+split_id,holdout_control,holdout_endo,holdout_exo,region_coverage,is_full_region_holdout,is_control_cerebellum_only_mouse,is_endo_cerebellum_only_mouse,is_exo_cerebellum_only_mouse,n_cerebellum_only_mice_holdout,is_mk3_control_holdout,is_cerebellum_stress_holdout,split_name,regions_control_str,regions_endo_str,regions_exo_str,holdout_regions_str
+3,mk2a,mend1,mexo1,2,false,0,0,0,0,false,false,003_mk2a_mend1_mexo1,cortex|striatum,cortex,cortex,striatum|cortex
+4,mk2a,mend1,mexo2a,2,false,0,0,0,0,false,false,004_mk2a_mend1_mexo2a,cortex|striatum,cortex,cortex|striatum,striatum|cortex
+6,mk2a,mend2b,mexo2a,2,false,0,0,0,0,false,false,006_mk2a_mend2b_mexo2a,cortex|striatum,cortex|striatum,cortex|striatum,cortex|striatum
+8,mk2a,mend3,mexo2a,3,true,0,1,0,1,false,true,008_mk2a_mend3_mexo2a,cortex|striatum,cerebellum,cortex|striatum,cortex|cerebellum|striatum
+12,mk2b,mend3,mexo1,3,true,0,1,0,1,false,true,012_mk2b_mend3_mexo1,cortex|striatum,cerebellum,cortex,cortex|striatum|cerebellum
+16,mk3,mend2a,mexo1,3,true,1,0,0,1,true,true,016_mk3_mend2a_mexo1,cerebellum,cortex|striatum,cortex,cerebellum|striatum|cortex
+17,mk3,mend2a,mexo2a,3,true,1,0,0,1,true,true,017_mk3_mend2a_mexo2a,cerebellum,cortex|striatum,cortex|striatum,cortex|cerebellum|striatum
+19,mk3,mend2b,mexo2a,3,true,1,0,0,1,true,true,019_mk3_mend2b_mexo2a,cerebellum,cortex|striatum,cortex|striatum,striatum|cerebellum|cortex

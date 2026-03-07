@@ -1,0 +1,54 @@
+data:
+  allowed_classes:
+  - control
+  - endo
+  - exo
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: '2900'
+  sample_level: file_mean
+experiment:
+  output_root: runs/analysis/hyp_v2_h2_train_aware_p2_fast4_20260307/train_runs
+  seed: 144
+  name: p2lk_2900_trpatch8_ss22__h2ta_c-mk3__e-mend2a__x-mexo1_s42__m02_p2lk_2900_trpatch8_ss22__2900
+model:
+  model_family: spectral_transformer
+  torch_epochs: 25
+  torch_batch_size: 32
+  torch_lr: 0.0008
+  torch_weight_decay: 0.0002
+  torch_patience: 5
+  torch_device: auto
+  transformer_patch_size: 8
+  transformer_d_model: 128
+  transformer_nhead: 4
+  transformer_num_layers: 3
+  transformer_dim_ff: 256
+  transformer_dropout: 0.1
+preprocess:
+  baseline_lam: 100000.0
+  baseline_method: airpls
+  baseline_niter: 12
+  baseline_p: 0.01
+  normalization: snv
+  savgol_poly: 3
+  savgol_window: 11
+  wn_max: 3285.0
+  wn_min: 2460.0
+  despike_enabled: true
+  despike_threshold: 8.0
+  despike_window: 5
+  despike_max_iter: 1
+validation:
+  n_splits: 5
+  split_kind: stratified_group_kfold
+  split_shuffle: true
+  split_seed: 22
+  local_holdout_groups:
+  - mk3
+  - mend2a
+  - mexo1

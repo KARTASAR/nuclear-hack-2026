@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "created_utc": "2026-03-07T12:08:20.773543+00:00",
+  "source": {
+    "selection_json": "runs/p2_locked_holdout_selection_20260306.json",
+    "selection_selected_by_cv": {
+      "ensemble_1500": "1500_top3",
+      "ensemble_2900": "2900_top4",
+      "alpha_1500": 0.07,
+      "alpha_2900": 0.9299999999999999,
+      "cv_macro_f1": 0.7887797839017351,
+      "cv_bal_acc": 0.7830065359477124,
+      "cv_accuracy": 0.78,
+      "holdout_macro_f1": 0.6481481481481483,
+      "holdout_bal_acc": 0.6666666666666666,
+      "holdout_accuracy": 0.6666666666666666
+    },
+    "selection_best_holdout_diagnostic": {
+      "ensemble_1500": "1500_top1",
+      "ensemble_2900": "2900_top3",
+      "alpha_1500": 0.07,
+      "alpha_2900": 0.9299999999999999,
+      "cv_macro_f1": 0.7311103530615725,
+      "cv_bal_acc": 0.7565359477124183,
+      "cv_accuracy": 0.74,
+      "holdout_macro_f1": 0.7011784511784511,
+      "holdout_bal_acc": 0.7222222222222222,
+      "holdout_accuracy": 0.7222222222222222
+    }
+  },
+  "class_names": [
+    "control",
+    "endo",
+    "exo"
+  ],
+  "models_by_center_ranked": {
+    "1500": [
+      "center1500_rank1_p2lk_1500_ramannet_ss11",
+      "center1500_rank2_p2lk_1500_ramannet_ss22",
+      "center1500_rank3_p2lk_1500_ramannet_ss33",
+      "center1500_rank4_p2lk_1500_ramannet_ss42"
+    ],
+    "2900": [
+      "center2900_rank1_p2lk_2900_trpatch8_ss22",
+      "center2900_rank2_p2lk_2900_trpatch8_ss42",
+      "center2900_rank3_p2lk_2900_trpatch8_ss33",
+      "center2900_rank4_p2lk_2900_trpatch8_ss11"
+    ]
+  },
+  "models": [
+    {
+      "model_id": "center1500_rank1_p2lk_1500_ramannet_ss11",
+      "center": "1500",
+      "rank": 1,
+      "source_run_id": "20260306_205252_p2lk_1500_ramannet_ss11",
+      "run_id": "20260306_205252_p2lk_1500_ramannet_ss11",
+      "model_family": "ramannet",
+      "serialization": "torch_state_dict",
+      "model_path": "models/center1500_rank1_p2lk_1500_ramannet_ss11/model.pt",
+      "preprocessor_path": "models/center1500_rank1_p2lk_1500_ramannet_ss11/preprocessor.pkl",
+      "class_names_path": "models/center1500_rank1_p2lk_1500_ramannet_ss11/class_names.json",
+      "train_snapshot_path": "models/center1500_rank1_p2lk_1500_ramannet_ss11/train_snapshot.json",
+      "n_features_after_preprocess": 1007,
+      "n_samples_fit": 118
+    },
+    {
+      "model_id": "center1500_rank2_p2lk_1500_ramannet_ss22",
+      "center": "1500",
+      "rank": 2,
+      "source_run_id": "20260306_205253_p2lk_1500_ramannet_ss22",
+      "run_id": "20260306_205253_p2lk_1500_ramannet_ss22",
+      "model_family": "ramannet",
+      "serialization": "torch_state_dict",
+      "model_path": "models/center1500_rank2_p2lk_1500_ramannet_ss22/model.pt",
+      "preprocessor_path": "models/center1500_rank2_p2lk_1500_ramannet_ss22/preprocessor.pkl",
+      "class_names_path": "models/center1500_rank2_p2lk_1500_ramannet_ss22/class_names.json",
+      "train_snapshot_path": "models/center1500_rank2_p2lk_1500_ramannet_ss22/train_snapshot.json",
+      "n_features_after_preprocess": 1007,
+      "n_samples_fit": 118
+    },
+    {
+      "model_id": "center1500_rank3_p2lk_1500_ramannet_ss33",
+      "center": "1500",
+      "rank": 3,
+      "source_run_id": "20260306_205307_p2lk_1500_ramannet_ss33",
+      "run_id": "20260306_205307_p2lk_1500_ramannet_ss33",
+      "model_family": "ramannet",
+      "serialization": "torch_state_dict",
+      "model_path": "models/center1500_rank3_p2lk_1500_ramannet_ss33/model.pt",
+      "preprocessor_path": "models/center1500_rank3_p2lk_1500_ramannet_ss33/preprocessor.pkl",
+      "class_names_path": "models/center1500_rank3_p2lk_1500_ramannet_ss33/class_names.json",
+      "train_snapshot_path": "models/center1500_rank3_p2lk_1500_ramannet_ss33/train_snapshot.json",
+      "n_features_after_preprocess": 1007,
+      "n_samples_fit": 118
+    },
+    {
+      "model_id": "center1500_rank4_p2lk_1500_ramannet_ss42",
+      "center": "1500",
+      "rank": 4,
+      "source_run_id": "20260306_205307_p2lk_1500_ramannet_ss42",
+      "run_id": "20260306_205307_p2lk_1500_ramannet_ss42",
+      "model_family": "ramannet",
+      "serialization": "torch_state_dict",
+      "model_path": "models/center1500_rank4_p2lk_1500_ramannet_ss42/model.pt",
+      "preprocessor_path": "models/center1500_rank4_p2lk_1500_ramannet_ss42/preprocessor.pkl",
+      "class_names_path": "models/center1500_rank4_p2lk_1500_ramannet_ss42/class_names.json",
+      "train_snapshot_path": "models/center1500_rank4_p2lk_1500_ramannet_ss42/train_snapshot.json",
+      "n_features_after_preprocess": 1007,
+      "n_samples_fit": 118
+    },
+    {
+      "model_id": "center2900_rank1_p2lk_2900_trpatch8_ss22",
+      "center": "2900",
+      "rank": 1,
+      "source_run_id": "20260306_205401_p2lk_2900_trpatch8_ss22",
+      "run_id": "20260306_205401_p2lk_2900_trpatch8_ss22",
+      "model_family": "spectral_transformer",
+      "serialization": "torch_state_dict",
+      "model_path": "models/center2900_rank1_p2lk_2900_trpatch8_ss22/model.pt",
+      "preprocessor_path": "models/center2900_rank1_p2lk_2900_trpatch8_ss22/preprocessor.pkl",
+      "class_names_path": "models/center2900_rank1_p2lk_2900_trpatch8_ss22/class_names.json",
+      "train_snapshot_path": "models/center2900_rank1_p2lk_2900_trpatch8_ss22/train_snapshot.json",
+      "n_features_after_preprocess": 1008,
+      "n_samples_fit": 118
+    },
+    {
+      "model_id": "center2900_rank2_p2lk_2900_trpatch8_ss42",
+      "center": "2900",
+      "rank": 2,
+      "source_run_id": "20260306_205512_p2lk_2900_trpatch8_ss42",
+      "run_id": "20260306_205512_p2lk_2900_trpatch8_ss42",
+      "model_family": "spectral_transformer",
+      "serialization": "torch_state_dict",
+      "model_path": "models/center2900_rank2_p2lk_2900_trpatch8_ss42/model.pt",
+      "preprocessor_path": "models/center2900_rank2_p2lk_2900_trpatch8_ss42/preprocessor.pkl",
+      "class_names_path": "models/center2900_rank2_p2lk_2900_trpatch8_ss42/class_names.json",
+      "train_snapshot_path": "models/center2900_rank2_p2lk_2900_trpatch8_ss42/train_snapshot.json",
+      "n_features_after_preprocess": 1008,
+      "n_samples_fit": 118
+    },
+    {
+      "model_id": "center2900_rank3_p2lk_2900_trpatch8_ss33",
+      "center": "2900",
+      "rank": 3,
+      "source_run_id": "20260306_205454_p2lk_2900_trpatch8_ss33",
+      "run_id": "20260306_205454_p2lk_2900_trpatch8_ss33",
+      "model_family": "spectral_transformer",
+      "serialization": "torch_state_dict",
+      "model_path": "models/center2900_rank3_p2lk_2900_trpatch8_ss33/model.pt",
+      "preprocessor_path": "models/center2900_rank3_p2lk_2900_trpatch8_ss33/preprocessor.pkl",
+      "class_names_path": "models/center2900_rank3_p2lk_2900_trpatch8_ss33/class_names.json",
+      "train_snapshot_path": "models/center2900_rank3_p2lk_2900_trpatch8_ss33/train_snapshot.json",
+      "n_features_after_preprocess": 1008,
+      "n_samples_fit": 118
+    },
+    {
+      "model_id": "center2900_rank4_p2lk_2900_trpatch8_ss11",
+      "center": "2900",
+      "rank": 4,
+      "source_run_id": "20260306_205400_p2lk_2900_trpatch8_ss11",
+      "run_id": "20260306_205400_p2lk_2900_trpatch8_ss11",
+      "model_family": "spectral_transformer",
+      "serialization": "torch_state_dict",
+      "model_path": "models/center2900_rank4_p2lk_2900_trpatch8_ss11/model.pt",
+      "preprocessor_path": "models/center2900_rank4_p2lk_2900_trpatch8_ss11/preprocessor.pkl",
+      "class_names_path": "models/center2900_rank4_p2lk_2900_trpatch8_ss11/class_names.json",
+      "train_snapshot_path": "models/center2900_rank4_p2lk_2900_trpatch8_ss11/train_snapshot.json",
+      "n_features_after_preprocess": 1008,
+      "n_samples_fit": 118
+    }
+  ],
+  "policies": {
+    "main": {
+      "name": "new_primary_top3_top4_a007",
+      "top_k_by_center": {
+        "1500": 3,
+        "2900": 4
+      },
+      "alpha_1500": 0.07,
+      "alpha_2900": 0.9299999999999999
+    },
+    "fallback": {
+      "name": "fallback_top1_top1_a017",
+      "top_k_by_center": {
+        "1500": 1,
+        "2900": 1
+      },
+      "alpha_1500": 0.17,
+      "alpha_2900": 0.83
+    }
+  },
+  "notes": [
+    "risk-on strategy intentionally excluded from deployable pack",
+    "single-center inference defaults to fallback policy"
+  ]
+}

@@ -1,0 +1,42 @@
+data:
+  allowed_classes:
+  - control
+  - endo
+  - exo
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: '1500'
+  sample_level: file_mean
+experiment:
+  output_root: runs/analysis/hyp_v2_h1_train_aware_sanity_fast_20260307/train_runs
+  seed: 43
+  name: p5_1500_file_mean_arpls_msc_catboost__h1ta_c-mk3__e-mend2b__x-mexo1_s42__m01_p5_1500_file_mean_arpls_msc_catboost__1500
+model:
+  model_family: catboost
+  depth: 6
+  eval_metric: TotalF1
+  iterations: 50
+  l2_leaf_reg: 3.0
+  learning_rate: 0.08
+  loss_function: MultiClass
+  verbose: false
+preprocess:
+  baseline_lam: 100000.0
+  baseline_method: arpls
+  baseline_niter: 12
+  baseline_p: 0.01
+  normalization: msc
+  savgol_poly: 3
+  savgol_window: 11
+  wn_max: 1998.0
+  wn_min: 930.0
+validation:
+  local_holdout_groups:
+  - mk3
+  - mend2b
+  - mexo1
+  n_splits: 5

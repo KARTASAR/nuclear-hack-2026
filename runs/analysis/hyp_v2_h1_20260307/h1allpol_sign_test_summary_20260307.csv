@@ -1,0 +1,9 @@
+tag,comparison,metric,n_seeds,wins,losses,ties,win_rate_excl_ties,mean_delta,sign_test_p_one_sided
+n24,all_primary,lock_overall_macro_f1_mean,20,16,4,0,0.8,0.06384518831906258,0.005908966064453125
+n24,all_primary,lock_worst_slice_macro_f1,20,17,3,0,0.85,0.05044574353189727,0.0012884140014648438
+n24,all_fallback,lock_overall_macro_f1_mean,20,20,0,0,1.0,0.1350028443713039,9.5367431640625e-7
+n24,all_fallback,lock_worst_slice_macro_f1,20,20,0,0,1.0,0.1817729778359008,9.5367431640625e-7
+n36,all_primary,lock_overall_macro_f1_mean,20,16,4,0,0.8,0.061410247192220754,0.005908966064453125
+n36,all_primary,lock_worst_slice_macro_f1,20,15,5,0,0.75,0.07773072998983341,0.020694732666015625
+n36,all_fallback,lock_overall_macro_f1_mean,20,20,0,0,1.0,0.13703329265678627,9.5367431640625e-7
+n36,all_fallback,lock_worst_slice_macro_f1,20,20,0,0,1.0,0.18733393842807283,9.5367431640625e-7

@@ -1,0 +1,47 @@
+data:
+  allowed_classes:
+  - control
+  - endo
+  - exo
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: '1500'
+  sample_level: file_mean
+experiment:
+  output_root: runs/analysis/hyp_v2_h1_train_aware_p2_finalcheck_20260307/train_runs
+  seed: 43
+  name: p2lk_1500_ramannet_ss11__h1ta_c-mk3__e-mend2a__x-mexo1_s42__m01_p2lk_1500_ramannet_ss11__1500
+model:
+  model_family: ramannet
+  torch_epochs: 25
+  torch_batch_size: 32
+  torch_lr: 0.001
+  torch_weight_decay: 0.0003
+  torch_patience: 5
+  torch_device: auto
+  ramannet_segments: 64
+  ramannet_embed_dim: 64
+  ramannet_dropout: 0.2
+preprocess:
+  baseline_lam: 100000.0
+  baseline_method: arpls
+  baseline_niter: 12
+  baseline_p: 0.01
+  normalization: msc
+  savgol_poly: 3
+  savgol_window: 11
+  wn_max: 1998.0
+  wn_min: 930.0
+validation:
+  n_splits: 5
+  split_kind: stratified_group_kfold
+  split_shuffle: true
+  split_seed: 11
+  local_holdout_groups:
+  - mk3
+  - mend2a
+  - mexo1

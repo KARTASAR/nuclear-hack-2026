@@ -1,0 +1,43 @@
+data:
+  allowed_classes: [control, endo, exo]
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: '1500'
+  sample_level: file_mean
+experiment:
+  output_root: runs
+  seed: 42
+  name: rs1_1500_bergholt_modpoly_max_catboost
+model:
+  model_family: catboost
+  depth: 6
+  eval_metric: TotalF1
+  iterations: 50
+  l2_leaf_reg: 3.0
+  learning_rate: 0.08
+  loss_function: MultiClass
+  thread_count: 4
+  verbose: false
+preprocess:
+  baseline_use_pybaselines: true
+  baseline_lam: 100000.0
+  baseline_method: modpoly
+  baseline_niter: 15
+  baseline_p: 0.01
+  normalization: max
+  despike_enabled: true
+  despike_threshold: 8.0
+  despike_window: 5
+  despike_max_iter: 1
+  savgol_poly: 3
+  savgol_window: 11
+  derivative_order: 0
+  wn_max: 1998.0
+  wn_min: 930.0
+validation:
+  local_holdout_groups: []
+  n_splits: 5

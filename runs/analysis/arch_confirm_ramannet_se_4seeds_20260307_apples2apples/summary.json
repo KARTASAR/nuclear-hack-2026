@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "kind": "baseline",
+    "n_seeds": 4,
+    "macro_f1_cv_mean": 0.6004671598843024,
+    "macro_f1_cv_std": 0.025673805373995346,
+    "macro_f1_holdout_mean": 0.5967985717985718,
+    "macro_f1_holdout_std": 0.03611978854809125
+  },
+  "ramannet_se": {
+    "kind": "ramannet_se",
+    "n_seeds": 4,
+    "macro_f1_cv_mean": 0.6114943680652858,
+    "macro_f1_cv_std": 0.05017989251452103,
+    "macro_f1_holdout_mean": 0.584992784992785,
+    "macro_f1_holdout_std": 0.02249416633206335
+  },
+  "delta_mean_cv_macro_f1": 0.01102720818098335,
+  "delta_mean_holdout_macro_f1": -0.011805786805786811
+}

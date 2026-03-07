@@ -1,0 +1,17 @@
+{
+  "selection_json": "runs/p2_locked_holdout_selection_20260306.json",
+  "sample_meta": "runs/20260306_213305_v1_smoke_center1500_fast/sample_meta.parquet",
+  "runs_root": "runs",
+  "fallback_alpha_1500": 0.17,
+  "primary_alpha_1500": 0.07,
+  "router_policies": [
+    {
+      "strategy": "h1_router_fb_cortex_striatum",
+      "fallback_regions": [
+        "cortex",
+        "striatum"
+      ]
+    }
+  ],
+  "base_battery": "runs/multi_holdout_strategy_compare_shortlist8_20260307.csv"
+}

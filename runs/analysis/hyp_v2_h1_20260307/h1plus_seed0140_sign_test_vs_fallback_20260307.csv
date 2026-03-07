@@ -1,0 +1,5 @@
+tag,comparison,metric,n_seeds,wins,ties,win_rate_excl_ties,mean_delta,sign_test_p_one_sided
+n24,h1_router_fb_cortex_striatum_vs_fallback_top1_top1_a017,d_overall,40,40,0,1.0,0.18677187702196998,9.094947017729282e-13
+n24,h1_router_fb_cortex_striatum_vs_fallback_top1_top1_a017,d_worst,40,39,0,0.975,0.1465312425875943,3.728928277269006e-11
+n36,h1_router_fb_cortex_striatum_vs_fallback_top1_top1_a017,d_overall,40,40,0,1.0,0.20243576692322166,9.094947017729282e-13
+n36,h1_router_fb_cortex_striatum_vs_fallback_top1_top1_a017,d_worst,40,40,0,1.0,0.14987223948273057,9.094947017729282e-13

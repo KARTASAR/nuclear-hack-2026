@@ -1,0 +1,104 @@
+{
+  "date": "2026-03-07",
+  "protocol": "dev_lock_battery_multi_seed",
+  "inputs": {
+    "battery_input": "runs/multi_holdout_strategy_compare_20260307.csv",
+    "sample_meta": "runs/20260306_213305_v1_smoke_center1500_fast/sample_meta.parquet",
+    "candidate_strategies": [
+      "old_single_old2900_a011",
+      "baseline1500_tuned2900_a011",
+      "fallback_top1_top1_a017",
+      "new_primary_top3_top4_a007"
+    ],
+    "settings": [
+      {
+        "tag": "n24",
+        "balanced_n_total": 24,
+        "min_full_region": 12,
+        "min_cerebellum_stress": 8,
+        "min_mk3_control": 4,
+        "seeds": "1..20"
+      },
+      {
+        "tag": "n36",
+        "balanced_n_total": 36,
+        "min_full_region": 18,
+        "min_cerebellum_stress": 12,
+        "min_mk3_control": 6,
+        "seeds": "1..20"
+      }
+    ],
+    "dev_fraction": 0.67,
+    "overall_tolerance": 0.01
+  },
+  "winner_counts": {
+    "n24": [
+      {
+        "recommended_strategy": "fallback_top1_top1_a017",
+        "n_wins": 11
+      },
+      {
+        "recommended_strategy": "new_primary_top3_top4_a007",
+        "n_wins": 5
+      },
+      {
+        "recommended_strategy": "old_single_old2900_a011",
+        "n_wins": 3
+      },
+      {
+        "recommended_strategy": "baseline1500_tuned2900_a011",
+        "n_wins": 1
+      }
+    ],
+    "n36": [
+      {
+        "recommended_strategy": "fallback_top1_top1_a017",
+        "n_wins": 10
+      },
+      {
+        "recommended_strategy": "new_primary_top3_top4_a007",
+        "n_wins": 5
+      },
+      {
+        "recommended_strategy": "old_single_old2900_a011",
+        "n_wins": 4
+      },
+      {
+        "recommended_strategy": "baseline1500_tuned2900_a011",
+        "n_wins": 1
+      }
+    ]
+  },
+  "overall_ranking_by_lock_worst_then_overall": [
+    {
+      "strategy": "fallback_top1_top1_a017",
+      "avg_lock_overall_mean_across_tags": 0.5330453829056401,
+      "avg_lock_worst_mean_across_tags": 0.5506659339905627,
+      "avg_lock_win_rate_across_tags": 0.525
+    },
+    {
+      "strategy": "old_single_old2900_a011",
+      "avg_lock_overall_mean_across_tags": 0.5199601873088742,
+      "avg_lock_worst_mean_across_tags": 0.5200453176348518,
+      "avg_lock_win_rate_across_tags": 0.175
+    },
+    {
+      "strategy": "baseline1500_tuned2900_a011",
+      "avg_lock_overall_mean_across_tags": 0.4919240733440927,
+      "avg_lock_worst_mean_across_tags": 0.5116917786329671,
+      "avg_lock_win_rate_across_tags": 0.05
+    },
+    {
+      "strategy": "new_primary_top3_top4_a007",
+      "avg_lock_overall_mean_across_tags": 0.5199357306806935,
+      "avg_lock_worst_mean_across_tags": 0.48368551710830043,
+      "avg_lock_win_rate_across_tags": 0.25
+    }
+  ],
+  "recommended_stable_candidate": "fallback_top1_top1_a017",
+  "notes": [
+    "fallback wins most often in both n24 and n36 sweeps",
+    "fallback has best average lock worst-slice metric across tags",
+    "new_primary has competitive lock overall but weaker lock worst-slice"
+  ]
+}

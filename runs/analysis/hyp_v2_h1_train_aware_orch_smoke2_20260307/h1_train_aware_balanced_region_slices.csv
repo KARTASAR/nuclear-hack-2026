@@ -1,0 +1,16 @@
+strategy,n_rows,macro_f1_mean,macro_f1_std,balanced_accuracy_mean,balanced_accuracy_std,accuracy_mean,accuracy_std,slice
+h1_train_router_fb_cortex_striatum,1,0.3800865800865801,,0.47222222222222227,,0.5,,cerebellum_stress
+h1_train_primary_a007,1,0.3800865800865801,,0.47222222222222227,,0.5,,cerebellum_stress
+h1_train_random_router_p50,1,0.3800865800865801,,0.47222222222222227,,0.5,,cerebellum_stress
+h1_train_fallback_a017,1,0.3800865800865801,,0.47222222222222227,,0.5,,cerebellum_stress
+h1_train_router_region_permute_fb_cortex_striatum,1,0.3800865800865801,,0.47222222222222227,,0.5,,cerebellum_stress
+h1_train_random_router_p50,1,0.3800865800865801,,0.47222222222222227,,0.5,,full_region
+h1_train_fallback_a017,1,0.3800865800865801,,0.47222222222222227,,0.5,,full_region
+h1_train_router_region_permute_fb_cortex_striatum,1,0.3800865800865801,,0.47222222222222227,,0.5,,full_region
+h1_train_primary_a007,1,0.3800865800865801,,0.47222222222222227,,0.5,,full_region
+h1_train_router_fb_cortex_striatum,1,0.3800865800865801,,0.47222222222222227,,0.5,,full_region
+h1_train_primary_a007,1,0.3800865800865801,,0.47222222222222227,,0.5,,overall
+h1_train_router_region_permute_fb_cortex_striatum,1,0.3800865800865801,,0.47222222222222227,,0.5,,overall
+h1_train_router_fb_cortex_striatum,1,0.3800865800865801,,0.47222222222222227,,0.5,,overall
+h1_train_fallback_a017,1,0.3800865800865801,,0.47222222222222227,,0.5,,overall
+h1_train_random_router_p50,1,0.3800865800865801,,0.47222222222222227,,0.5,,overall

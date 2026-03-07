@@ -1,0 +1,103 @@
+{
+  "accuracy": 0.4491525423728814,
+  "macro_f1": 0.42285697202137157,
+  "weighted_f1": 0.4339173576165283,
+  "balanced_accuracy": 0.43584656084656087,
+  "log_loss": 1.0303676658992977,
+  "confusion_matrix": [
+    [
+      15,
+      17,
+      8
+    ],
+    [
+      19,
+      7,
+      10
+    ],
+    [
+      9,
+      2,
+      31
+    ]
+  ],
+  "classification_report": {
+    "control": {
+      "precision": 0.3488372093023256,
+      "recall": 0.375,
+      "f1-score": 0.3614457831325301,
+      "support": 40.0
+    },
+    "endo": {
+      "precision": 0.2692307692307692,
+      "recall": 0.19444444444444445,
+      "f1-score": 0.22580645161290322,
+      "support": 36.0
+    },
+    "exo": {
+      "precision": 0.6326530612244898,
+      "recall": 0.7380952380952381,
+      "f1-score": 0.6813186813186813,
+      "support": 42.0
+    },
+    "accuracy": 0.4491525423728814,
+    "macro avg": {
+      "precision": 0.41690701325252827,
+      "recall": 0.43584656084656087,
+      "f1-score": 0.42285697202137157,
+      "support": 118.0
+    },
+    "weighted avg": {
+      "precision": 0.425569700303638,
+      "recall": 0.4491525423728814,
+      "f1-score": 0.4339173576165283,
+      "support": 118.0
+    }
+  },
+  "auc_ovr_macro": 0.6630541919213293,
+  "folds": [
+    {
+      "fold": 1,
+      "n_train": 76,
+      "n_valid": 42,
+      "n_train_groups": 8,
+      "n_valid_groups": 4,
+      "macro_f1": 0.492511320097527,
+      "balanced_accuracy": 0.5925925925925926,
+      "accuracy": 0.5238095238095238,
+      "auc_ovr_macro": 0.8248456790123456
+    },
+    {
+      "fold": 2,
+      "n_train": 78,
+      "n_valid": 40,
+      "n_train_groups": 8,
+      "n_valid_groups": 4,
+      "macro_f1": 0.3525641025641026,
+      "balanced_accuracy": 0.5555555555555555,
+      "accuracy": 0.4,
+      "auc_ovr_macro": 0.8229440766205472
+    },
+    {
+      "fold": 3,
+      "n_train": 82,
+      "n_valid": 36,
+      "n_train_groups": 8,
+      "n_valid_groups": 4,
+      "macro_f1": 0.3666666666666667,
+      "balanced_accuracy": 0.47222222222222227,
+      "accuracy": 0.4166666666666667,
+      "auc_ovr_macro": 0.729835390946502
+    }
+  ],
+  "class_to_int": {
+    "control": 0,
+    "endo": 1,
+    "exo": 2
+  },
+  "n_samples": 118,
+  "n_features_raw": 1015,
+  "n_cv_samples": 118,
+  "n_holdout_samples": 0,
+  "holdout_groups": []
+}

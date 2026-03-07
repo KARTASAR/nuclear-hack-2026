@@ -1,0 +1,33 @@
+{
+  "root_dir": "tmp/region_check_data/all",
+  "center_filter": "1500",
+  "sample_level": "file_mean",
+  "cache_hit": false,
+  "cache_key": "e6793874fccb2665bec03c7443db691d1a2e3f044d7ecaab1607fc706f6338f7",
+  "cache_dir": ".cache/raman_hack/e6793874fccb2665bec03c7443db691d1a2e3f044d7ecaab1607fc706f6338f7",
+  "n_files_total": 239,
+  "n_files_used": 118,
+  "n_samples": 118,
+  "n_features": 1015,
+  "skipped": {
+    "class_filtered": 0,
+    "average_filtered": 2,
+    "center_filtered": 118,
+    "center_mismatch_filtered": 1,
+    "filename_unmatched_filtered": 0,
+    "parse_errors": 0
+  },
+  "class_distribution": {
+    "control": 40,
+    "endo": 36,
+    "exo": 42
+  },
+  "anomaly_examples": {
+    "parse_errors": [],
+    "center_mismatch": [
+      "tmp/region_check_data/all/endo/mend1/cortex_endo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2.txt"
+    ],
+    "filename_unmatched": []
+  },
+  "n_unique_groups": 12
+}

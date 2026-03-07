@@ -1,0 +1,62 @@
+# OS / file manager
+.DS_Store
+Thumbs.db
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test, coverage, lint, type-check caches
+.pytest_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Documentation build output
+site/
+
+# Logs and runtime files
+*.log
+*.pid
+
+# IDE/editor settings
+.idea/
+.vscode/
+
+# ML experiment artifacts
+wandb/
+mlruns/
+tensorboard/
+checkpoints/
+catboost_info/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+data/real
+tmp

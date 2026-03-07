@@ -1,0 +1,613 @@
+{
+  "created_utc": "2026-03-07T00:59:11.856014+00:00",
+  "python_version": "3.11.14 (main, Oct 21 2025, 18:27:30) [Clang 20.1.8 ]",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "libraries": {
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "polars": "1.38.1",
+    "pyarrow": "23.0.1",
+    "scikit-learn": "1.8.0",
+    "catboost": "1.2.10",
+    "torch": "2.10.0",
+    "omegaconf": "2.3.0",
+    "hydra-core": "1.3.2"
+  },
+  "git_commit": "bc5d1e2e2989dceb338602725c379355489814f3",
+  "git_dirty": true,
+  "config_hash_sha256": "685f967a1cc576d72026d5c871bce73fa07c178bdb97fca030edef90172b7891",
+  "data_fingerprint_sha256": "7d9be1055eaaf9bc147923ff0d06b3763bf12255371ddbff2af558092543e577",
+  "n_used_files": 118,
+  "manifest_records": [
+    {
+      "file_path": "data/real/control/mk1/cortex_control_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place4_1.txt",
+      "size": 27176699,
+      "mtime_ns": 1762436993577754974
+    },
+    {
+      "file_path": "data/real/control/mk1/cortex_control_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place4_2.txt",
+      "size": 27176661,
+      "mtime_ns": 1762436994479843139
+    },
+    {
+      "file_path": "data/real/control/mk1/cortex_control_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place5_1.txt",
+      "size": 26643784,
+      "mtime_ns": 1762436995344015121
+    },
+    {
+      "file_path": "data/real/control/mk1/cortex_control_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place5_2.txt",
+      "size": 26643781,
+      "mtime_ns": 1762436996230895996
+    },
+    {
+      "file_path": "data/real/control/mk1/cortex_control_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place6_1.txt",
+      "size": 27176659,
+      "mtime_ns": 1762436997133424758
+    },
+    {
+      "file_path": "data/real/control/mk1/cortex_control_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place6_2.txt",
+      "size": 27190030,
+      "mtime_ns": 1762436998020418167
+    },
+    {
+      "file_path": "data/real/control/mk2a/cortex_left_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 27709536,
+      "mtime_ns": 1762437181071866989
+    },
+    {
+      "file_path": "data/real/control/mk2a/cortex_left_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27184976,
+      "mtime_ns": 1762437181936653137
+    },
+    {
+      "file_path": "data/real/control/mk2a/cortex_left_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27256047,
+      "mtime_ns": 1762437182823543548
+    },
+    {
+      "file_path": "data/real/control/mk2a/cortex_left_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 27750195,
+      "mtime_ns": 1762437183694889068
+    },
+    {
+      "file_path": "data/real/control/mk2a/cortex_right_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 27709541,
+      "mtime_ns": 1762437186301418304
+    },
+    {
+      "file_path": "data/real/control/mk2a/cortex_right_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 27740143,
+      "mtime_ns": 1762437187172681808
+    },
+    {
+      "file_path": "data/real/control/mk2a/striatum_left_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 27176658,
+      "mtime_ns": 1762437190660036087
+    },
+    {
+      "file_path": "data/real/control/mk2a/striatum_left_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27276885,
+      "mtime_ns": 1762437191515649795
+    },
+    {
+      "file_path": "data/real/control/mk2a/striatum_left_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27742834,
+      "mtime_ns": 1762437192386890411
+    },
+    {
+      "file_path": "data/real/control/mk2a/striatum_right_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27176657,
+      "mtime_ns": 1762437195843511581
+    },
+    {
+      "file_path": "data/real/control/mk2a/striatum_right_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27241153,
+      "mtime_ns": 1762437196714824676
+    },
+    {
+      "file_path": "data/real/control/mk2a/striatum_right_control_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 26697789,
+      "mtime_ns": 1762437197601619720
+    },
+    {
+      "file_path": "data/real/control/mk2b/cortex_left_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 27182873,
+      "mtime_ns": 1762437283031362533
+    },
+    {
+      "file_path": "data/real/control/mk2b/cortex_left_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27176837,
+      "mtime_ns": 1762437283933181762
+    },
+    {
+      "file_path": "data/real/control/mk2b/cortex_left_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 27531855,
+      "mtime_ns": 1762437284835531234
+    },
+    {
+      "file_path": "data/real/control/mk2b/cortex_left_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 26626059,
+      "mtime_ns": 1762437285722482681
+    },
+    {
+      "file_path": "data/real/control/mk2b/cortex_right_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 27190123,
+      "mtime_ns": 1762437288359352111
+    },
+    {
+      "file_path": "data/real/control/mk2b/cortex_right_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27179832,
+      "mtime_ns": 1762437289261896133
+    },
+    {
+      "file_path": "data/real/control/mk2b/striatum_left_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 27192941,
+      "mtime_ns": 1762437292818294525
+    },
+    {
+      "file_path": "data/real/control/mk2b/striatum_left_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27176766,
+      "mtime_ns": 1762437293732013702
+    },
+    {
+      "file_path": "data/real/control/mk2b/striatum_left_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27137431,
+      "mtime_ns": 1762437294634927749
+    },
+    {
+      "file_path": "data/real/control/mk2b/striatum_right_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27176738,
+      "mtime_ns": 1762437298195158004
+    },
+    {
+      "file_path": "data/real/control/mk2b/striatum_right_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27176679,
+      "mtime_ns": 1762437299081628799
+    },
+    {
+      "file_path": "data/real/control/mk2b/striatum_right_control_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 27172530,
+      "mtime_ns": 1762437299968093872
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_left_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 26643784,
+      "mtime_ns": 1744724009092519760
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_left_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 28242404,
+      "mtime_ns": 1744724009967287063
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_left_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27709529,
+      "mtime_ns": 1744724010842081069
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_left_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 28242404,
+      "mtime_ns": 1744724011716909408
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_left_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 28242406,
+      "mtime_ns": 1744724012607322692
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_right_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 26643778,
+      "mtime_ns": 1744724033414926528
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_right_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 28242403,
+      "mtime_ns": 1744724034289720535
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_right_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27709528,
+      "mtime_ns": 1744724035148891448
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_right_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 28242381,
+      "mtime_ns": 1744724036023685455
+    },
+    {
+      "file_path": "data/real/control/mk3/cerebellum_right_control_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 28242134,
+      "mtime_ns": 1744724036882858276
+    },
+    {
+      "file_path": "data/real/endo/mend1/cortex_endo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 26645527,
+      "mtime_ns": 1762438025369813919
+    },
+    {
+      "file_path": "data/real/endo/mend1/cortex_endo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 26643894,
+      "mtime_ns": 1762438026218063354
+    },
+    {
+      "file_path": "data/real/endo/mend1/cortex_endo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27709529,
+      "mtime_ns": 1762438075182899475
+    },
+    {
+      "file_path": "data/real/endo/mend1/cortex_endo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27709532,
+      "mtime_ns": 1762438076054216384
+    },
+    {
+      "file_path": "data/real/endo/mend1/cortex_endo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 27709529,
+      "mtime_ns": 1762438076940374374
+    },
+    {
+      "file_path": "data/real/endo/mend1/cortex_endo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 27709530,
+      "mtime_ns": 1762438077804141998
+    },
+    {
+      "file_path": "data/real/endo/mend2a/cortex_left_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 28228825,
+      "mtime_ns": 1762438434010669708
+    },
+    {
+      "file_path": "data/real/endo/mend2a/cortex_left_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27176659,
+      "mtime_ns": 1762438461140665054
+    },
+    {
+      "file_path": "data/real/endo/mend2a/cortex_left_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 26695224,
+      "mtime_ns": 1762438519343376159
+    },
+    {
+      "file_path": "data/real/endo/mend2a/cortex_right_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 28206846,
+      "mtime_ns": 1762438435761476516
+    },
+    {
+      "file_path": "data/real/endo/mend2a/cortex_right_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27176654,
+      "mtime_ns": 1762438462883262634
+    },
+    {
+      "file_path": "data/real/endo/mend2a/cortex_right_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 27196139,
+      "mtime_ns": 1762438540368339538
+    },
+    {
+      "file_path": "data/real/endo/mend2a/striatum_left_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 28173265,
+      "mtime_ns": 1762438437550153732
+    },
+    {
+      "file_path": "data/real/endo/mend2a/striatum_left_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27777819,
+      "mtime_ns": 1762438491236976623
+    },
+    {
+      "file_path": "data/real/endo/mend2a/striatum_left_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27194270,
+      "mtime_ns": 1762438542103187561
+    },
+    {
+      "file_path": "data/real/endo/mend2a/striatum_right_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27176688,
+      "mtime_ns": 1762438464619270324
+    },
+    {
+      "file_path": "data/real/endo/mend2a/striatum_right_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27176658,
+      "mtime_ns": 1762438492973007202
+    },
+    {
+      "file_path": "data/real/endo/mend2a/striatum_right_endo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 27194891,
+      "mtime_ns": 1762438543852939605
+    },
+    {
+      "file_path": "data/real/endo/mend2b/cortex_left_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 27176652,
+      "mtime_ns": 1762438806872306823
+    },
+    {
+      "file_path": "data/real/endo/mend2b/cortex_left_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27176655,
+      "mtime_ns": 1762438868114917755
+    },
+    {
+      "file_path": "data/real/endo/mend2b/cortex_left_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 27709526,
+      "mtime_ns": 1762438923811771392
+    },
+    {
+      "file_path": "data/real/endo/mend2b/cortex_right_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 27176655,
+      "mtime_ns": 1762438808591873168
+    },
+    {
+      "file_path": "data/real/endo/mend2b/cortex_right_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27176652,
+      "mtime_ns": 1762438869822956085
+    },
+    {
+      "file_path": "data/real/endo/mend2b/cortex_right_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 27177080,
+      "mtime_ns": 1762438944644886016
+    },
+    {
+      "file_path": "data/real/endo/mend2b/striatum_left_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 27709529,
+      "mtime_ns": 1762438832485179901
+    },
+    {
+      "file_path": "data/real/endo/mend2b/striatum_left_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27176657,
+      "mtime_ns": 1762438871542081832
+    },
+    {
+      "file_path": "data/real/endo/mend2b/striatum_left_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27709533,
+      "mtime_ns": 1762438967337957382
+    },
+    {
+      "file_path": "data/real/endo/mend2b/striatum_right_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27709531,
+      "mtime_ns": 1762438834204357147
+    },
+    {
+      "file_path": "data/real/endo/mend2b/striatum_right_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 26110912,
+      "mtime_ns": 1762438894458211898
+    },
+    {
+      "file_path": "data/real/endo/mend2b/striatum_right_endo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 27709527,
+      "mtime_ns": 1762438969061365127
+    },
+    {
+      "file_path": "data/real/endo/mend3/cerebellum_left_endo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 27709591,
+      "mtime_ns": 1744724016106468200
+    },
+    {
+      "file_path": "data/real/endo/mend3/cerebellum_left_endo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27176739,
+      "mtime_ns": 1744724016965667724
+    },
+    {
+      "file_path": "data/real/endo/mend3/cerebellum_left_endo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 27176697,
+      "mtime_ns": 1744724017840461730
+    },
+    {
+      "file_path": "data/real/endo/mend3/cerebellum_right_endo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 27709532,
+      "mtime_ns": 1744724040319547653
+    },
+    {
+      "file_path": "data/real/endo/mend3/cerebellum_right_endo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27176773,
+      "mtime_ns": 1744724041178720474
+    },
+    {
+      "file_path": "data/real/endo/mend3/cerebellum_right_endo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 27176689,
+      "mtime_ns": 1744724042037893295
+    },
+    {
+      "file_path": "data/real/exo/mexo1/cortex_exo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place4_1.txt",
+      "size": 27176798,
+      "mtime_ns": 1762437790742368698
+    },
+    {
+      "file_path": "data/real/exo/mexo1/cortex_exo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place4_2.txt",
+      "size": 26660915,
+      "mtime_ns": 1762437892520338058
+    },
+    {
+      "file_path": "data/real/exo/mexo1/cortex_exo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place5_1.txt",
+      "size": 27183645,
+      "mtime_ns": 1762437893375558853
+    },
+    {
+      "file_path": "data/real/exo/mexo1/cortex_exo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place5_2.txt",
+      "size": 27182843,
+      "mtime_ns": 1762437894224277496
+    },
+    {
+      "file_path": "data/real/exo/mexo1/cortex_exo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place6_1.txt",
+      "size": 27722528,
+      "mtime_ns": 1762437951735696792
+    },
+    {
+      "file_path": "data/real/exo/mexo1/cortex_exo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place6_2.txt",
+      "size": 27183708,
+      "mtime_ns": 1762437952606456756
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/cortex_left_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 26678053,
+      "mtime_ns": 1762438259895792007
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/cortex_left_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27202506,
+      "mtime_ns": 1762438308393293380
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/cortex_left_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 27771561,
+      "mtime_ns": 1762438354731595993
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/cortex_right_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 26666791,
+      "mtime_ns": 1762438261606664657
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/cortex_right_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27193900,
+      "mtime_ns": 1762438310130012512
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/cortex_right_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 26558125,
+      "mtime_ns": 1762438356473155975
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/striatum_left_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 27197986,
+      "mtime_ns": 1762438311887325286
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/striatum_left_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27554980,
+      "mtime_ns": 1762438358239030838
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/striatum_left_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27706737,
+      "mtime_ns": 1762438383793966293
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/striatum_right_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27195411,
+      "mtime_ns": 1762438313670360565
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/striatum_right_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27240269,
+      "mtime_ns": 1762438360027158737
+    },
+    {
+      "file_path": "data/real/exo/mexo2a/striatum_right_exo_2Agroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 27670247,
+      "mtime_ns": 1762438385552215576
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/cortex_left_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 26801365,
+      "mtime_ns": 1762438659900558471
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/cortex_left_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27179712,
+      "mtime_ns": 1762438682536724090
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/cortex_left_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 28242472,
+      "mtime_ns": 1762438715656253814
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/cortex_right_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 26870428,
+      "mtime_ns": 1762438661636631011
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/cortex_right_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 26649122,
+      "mtime_ns": 1762438684263593673
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/cortex_right_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 27709579,
+      "mtime_ns": 1762438717397943496
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/striatum_left_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 26645511,
+      "mtime_ns": 1762438686870288848
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/striatum_left_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27180666,
+      "mtime_ns": 1762438687749921798
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/striatum_left_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27898846,
+      "mtime_ns": 1762438744844184875
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/striatum_right_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 26652074,
+      "mtime_ns": 1762438689491025924
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/striatum_right_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27176655,
+      "mtime_ns": 1762438719132484436
+    },
+    {
+      "file_path": "data/real/exo/mexo2b/striatum_right_exo_2Bgroup_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 26110909,
+      "mtime_ns": 1762438772482841491
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_left_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 27709529,
+      "mtime_ns": 1744724023885915756
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_left_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 26643780,
+      "mtime_ns": 1744724024745086669
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_left_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27176841,
+      "mtime_ns": 1744724025604259490
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_left_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27177773,
+      "mtime_ns": 1744724026463432312
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_left_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 28242919,
+      "mtime_ns": 1744724027338226318
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_left_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 26644634,
+      "mtime_ns": 1744724028197378158
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_right_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 26643782,
+      "mtime_ns": 1744724048130208969
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_right_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 26644253,
+      "mtime_ns": 1744724048989379882
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_right_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27180116,
+      "mtime_ns": 1744724049832904815
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_right_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27178775,
+      "mtime_ns": 1744724050692106246
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_right_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 28242995,
+      "mtime_ns": 1744724051551279067
+    },
+    {
+      "file_path": "data/real/exo/mexo3/cerebellum_right_exo_3group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 28242407,
+      "mtime_ns": 1744724052426071166
+    }
+  ]
+}

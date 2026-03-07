@@ -1,0 +1,15 @@
+{
+  "run_id": "20260306_205252_p2lk_1500_ramannet_ss11",
+  "center": "1500",
+  "sample_level": "file_mean",
+  "model_family": "ramannet",
+  "n_samples_full": 118,
+  "n_samples_fit": 118,
+  "n_features_after_preprocess": 1007,
+  "n_outlier_removed": 0,
+  "class_names": [
+    "control",
+    "endo",
+    "exo"
+  ]
+}

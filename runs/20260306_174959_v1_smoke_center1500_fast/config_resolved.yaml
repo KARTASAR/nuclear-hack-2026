@@ -1,0 +1,46 @@
+experiment:
+  name: v1_smoke_center1500_fast
+  seed: 42
+  output_root: runs
+data:
+  root_dir: data/real
+  center: '1500'
+  sample_level: file_mean
+  point_max_per_file: 20
+  exclude_average: true
+  exclude_anomaly_mismatch_center: true
+  strict_filename_match: false
+  require_all_classes: true
+  allowed_classes:
+  - control
+  - endo
+  - exo
+preprocess:
+  wn_min: 930.0
+  wn_max: 1998.0
+  baseline_method: none
+  baseline_lam: 100000.0
+  baseline_p: 0.01
+  baseline_niter: 5
+  savgol_window: 9
+  savgol_poly: 2
+  normalization: snv
+model:
+  model_family: catboost
+  loss_function: MultiClass
+  eval_metric: TotalF1
+  iterations: 60
+  learning_rate: 0.1
+  depth: 5
+  l2_leaf_reg: 3.0
+  logreg_c: 1.0
+  logreg_max_iter: 2000
+  svm_c: 1.0
+  svm_gamma: scale
+  verbose: false
+validation:
+  n_splits: 3
+  split_kind: group_kfold
+  split_shuffle: false
+  split_seed: 42
+  local_holdout_groups: []

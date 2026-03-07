@@ -1,0 +1,254 @@
+{
+  "accuracy": 0.67,
+  "macro_f1": 0.6712458324828195,
+  "weighted_f1": 0.6726846295162278,
+  "balanced_accuracy": 0.6725490196078431,
+  "log_loss": 1.0133192054875428,
+  "confusion_matrix": [
+    [
+      21,
+      10,
+      3
+    ],
+    [
+      0,
+      22,
+      8
+    ],
+    [
+      5,
+      7,
+      24
+    ]
+  ],
+  "classification_report": {
+    "control": {
+      "precision": 0.8076923076923077,
+      "recall": 0.6176470588235294,
+      "f1-score": 0.7,
+      "support": 34.0
+    },
+    "endo": {
+      "precision": 0.5641025641025641,
+      "recall": 0.7333333333333333,
+      "f1-score": 0.6376811594202898,
+      "support": 30.0
+    },
+    "exo": {
+      "precision": 0.6857142857142857,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.676056338028169,
+      "support": 36.0
+    },
+    "accuracy": 0.67,
+    "macro avg": {
+      "precision": 0.6858363858363857,
+      "recall": 0.6725490196078431,
+      "f1-score": 0.6712458324828195,
+      "support": 100.0
+    },
+    "weighted avg": {
+      "precision": 0.6907032967032967,
+      "recall": 0.67,
+      "f1-score": 0.6726846295162278,
+      "support": 100.0
+    }
+  },
+  "auc_ovr_macro": 0.7679712920521743,
+  "folds": [
+    {
+      "fold": 1,
+      "n_train": 76,
+      "n_train_after_outlier": 76,
+      "n_train_outlier_removed": 0,
+      "n_valid": 24,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.7037037037037037,
+      "balanced_accuracy": 0.7083333333333334,
+      "accuracy": 0.7083333333333334,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 2,
+      "n_train": 76,
+      "n_train_after_outlier": 76,
+      "n_train_outlier_removed": 0,
+      "n_valid": 24,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.6376811594202899,
+      "balanced_accuracy": 0.9166666666666666,
+      "accuracy": 0.9166666666666666,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 3,
+      "n_train": 78,
+      "n_train_after_outlier": 78,
+      "n_train_outlier_removed": 0,
+      "n_valid": 22,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.24242424242424243,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.5454545454545454,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 4,
+      "n_train": 82,
+      "n_train_after_outlier": 82,
+      "n_train_outlier_removed": 0,
+      "n_valid": 18,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.3377926421404682,
+      "balanced_accuracy": 0.3333333333333333,
+      "accuracy": 0.3888888888888889,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 5,
+      "n_train": 88,
+      "n_train_after_outlier": 88,
+      "n_train_outlier_removed": 0,
+      "n_valid": 12,
+      "n_train_groups": 8,
+      "n_valid_groups": 1,
+      "macro_f1": 0.42857142857142855,
+      "balanced_accuracy": 0.75,
+      "accuracy": 0.75,
+      "auc_ovr_macro": NaN
+    }
+  ],
+  "class_to_int": {
+    "control": 0,
+    "endo": 1,
+    "exo": 2
+  },
+  "n_samples": 118,
+  "n_features_raw": 1015,
+  "n_cv_samples": 100,
+  "n_holdout_samples": 18,
+  "holdout_groups": [
+    "mk1",
+    "mend1",
+    "mexo1"
+  ],
+  "outlier_filter": "none",
+  "region_metrics_cv": {
+    "cerebellum": {
+      "n_samples": 28,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 10,
+        "endo": 6,
+        "exo": 12
+      },
+      "macro_f1": 0.196969696969697,
+      "balanced_accuracy": 0.2222222222222222,
+      "accuracy": 0.25,
+      "auc_ovr_macro": 0.4846590909090909
+    },
+    "cortex": {
+      "n_samples": 36,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 12,
+        "endo": 12,
+        "exo": 12
+      },
+      "macro_f1": 0.9166666666666666,
+      "balanced_accuracy": 0.9166666666666666,
+      "accuracy": 0.9166666666666666,
+      "auc_ovr_macro": 0.9699074074074074
+    },
+    "striatum": {
+      "n_samples": 36,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 12,
+        "endo": 12,
+        "exo": 12
+      },
+      "macro_f1": 0.7491638795986623,
+      "balanced_accuracy": 0.75,
+      "accuracy": 0.75,
+      "auc_ovr_macro": 0.8020833333333334
+    }
+  },
+  "local_holdout_metrics": {
+    "accuracy": 0.6111111111111112,
+    "macro_f1": 0.597979797979798,
+    "weighted_f1": 0.597979797979798,
+    "balanced_accuracy": 0.6111111111111112,
+    "log_loss": 0.9762130839060814,
+    "confusion_matrix": [
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        4,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        4
+      ]
+    ],
+    "classification_report": {
+      "control": {
+        "precision": 0.5555555555555556,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.6666666666666666,
+        "support": 6.0
+      },
+      "endo": {
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.4,
+        "support": 6.0
+      },
+      "exo": {
+        "precision": 0.8,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.7272727272727273,
+        "support": 6.0
+      },
+      "accuracy": 0.6111111111111112,
+      "macro avg": {
+        "precision": 0.6185185185185186,
+        "recall": 0.6111111111111112,
+        "f1-score": 0.597979797979798,
+        "support": 18.0
+      },
+      "weighted avg": {
+        "precision": 0.6185185185185186,
+        "recall": 0.6111111111111112,
+        "f1-score": 0.597979797979798,
+        "support": 18.0
+      }
+    },
+    "auc_ovr_macro": 0.7407407407407408
+  },
+  "region_metrics_holdout": {
+    "cortex": {
+      "n_samples": 18,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 6,
+        "endo": 6,
+        "exo": 6
+      },
+      "macro_f1": 0.597979797979798,
+      "balanced_accuracy": 0.6111111111111112,
+      "accuracy": 0.6111111111111112,
+      "auc_ovr_macro": 0.7407407407407408
+    }
+  }
+}

@@ -1,0 +1,38 @@
+data:
+  allowed_classes:
+  - control
+  - endo
+  - exo
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: '2900'
+  sample_level: point
+experiment:
+  output_root: runs
+  seed: 42
+  name: s1_2900_point_arpls_snv
+model:
+  depth: 6
+  eval_metric: TotalF1
+  iterations: 50
+  l2_leaf_reg: 3.0
+  learning_rate: 0.08
+  loss_function: MultiClass
+  verbose: false
+preprocess:
+  baseline_lam: 100000.0
+  baseline_method: arpls
+  baseline_niter: 12
+  baseline_p: 0.01
+  normalization: snv
+  savgol_poly: 3
+  savgol_window: 11
+  wn_max: 3285.0
+  wn_min: 2460.0
+validation:
+  local_holdout_groups: []
+  n_splits: 3

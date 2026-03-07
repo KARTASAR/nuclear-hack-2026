@@ -1,0 +1,37 @@
+data:
+  allowed_classes: [control, endo, exo]
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: '2900'
+  sample_level: file_mean
+experiment:
+  output_root: runs
+  seed: 42
+  name: rs1_2900_bergholt_modpoly_max_logreg
+model:
+  model_family: logreg
+  logreg_c: 1.0
+  logreg_max_iter: 3000
+preprocess:
+  baseline_use_pybaselines: true
+  baseline_lam: 100000.0
+  baseline_method: modpoly
+  baseline_niter: 15
+  baseline_p: 0.01
+  normalization: max
+  despike_enabled: true
+  despike_threshold: 8.0
+  despike_window: 5
+  despike_max_iter: 1
+  savgol_poly: 3
+  savgol_window: 11
+  derivative_order: 0
+  wn_max: 3285.0
+  wn_min: 2460.0
+validation:
+  local_holdout_groups: []
+  n_splits: 5

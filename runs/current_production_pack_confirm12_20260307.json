@@ -1,0 +1,44 @@
+{
+  "date": "2026-03-07",
+  "source_run": "runs/analysis/hyp_v2_h1_train_aware_p2_confirm12_20260307",
+  "protocol": "train_aware_confirm_run",
+  "scope": {
+    "balanced_n_total": 24,
+    "max_triplets": 12,
+    "n_runs": 96,
+    "leakage_audit": {
+      "n_ok": 96,
+      "n_failed": 0
+    }
+  },
+  "priority": {
+    "main": "new_primary_top3_top4_a007",
+    "fallback": "fallback_top1_top1_a017",
+    "risk_on_alt": "h1_router_fb_cortex_striatum"
+  },
+  "metrics": {
+    "new_primary_top3_top4_a007": {
+      "macro_f1_mean": 0.410059,
+      "balanced_accuracy_mean": 0.448611,
+      "accuracy_mean": 0.456585,
+      "worst_slice_macro_f1": 0.393548
+    },
+    "fallback_top1_top1_a017": {
+      "macro_f1_mean": 0.394799,
+      "balanced_accuracy_mean": 0.440741,
+      "accuracy_mean": 0.440204,
+      "worst_slice_macro_f1": 0.370917
+    },
+    "h1_router_fb_cortex_striatum": {
+      "macro_f1_mean": 0.402559,
+      "balanced_accuracy_mean": 0.443981,
+      "accuracy_mean": 0.449132,
+      "worst_slice_macro_f1": 0.381264
+    }
+  },
+  "notes": [
+    "main selected by latest wider train-aware confirm-run (max-triplets=12)",
+    "fallback kept as safety option",
+    "risk_on_alt kept for potential upside but below main in latest confirm-run"
+  ]
+}

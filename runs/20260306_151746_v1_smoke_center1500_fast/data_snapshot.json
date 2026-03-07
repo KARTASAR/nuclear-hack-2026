@@ -1,0 +1,21 @@
+{
+  "root_dir": "data/real",
+  "center_filter": "1500",
+  "sample_level": "file_mean",
+  "n_files_total": 239,
+  "n_files_used": 118,
+  "n_samples": 118,
+  "n_features": 1015,
+  "skipped": {
+    "class_filtered": 0,
+    "average_filtered": 2,
+    "center_filtered": 118,
+    "center_mismatch_filtered": 1,
+    "parse_errors": 0
+  },
+  "class_distribution": {
+    "control": 40,
+    "endo": 36,
+    "exo": 42
+  }
+}

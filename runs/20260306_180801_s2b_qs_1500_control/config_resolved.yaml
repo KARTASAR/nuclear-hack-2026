@@ -1,0 +1,58 @@
+experiment:
+  name: s2b_qs_1500_control
+  seed: 42
+  output_root: runs
+data:
+  root_dir: data/real
+  center: '1500'
+  sample_level: file_mean
+  point_max_per_file: 8
+  exclude_average: true
+  exclude_anomaly_mismatch_center: true
+  strict_filename_match: false
+  require_all_classes: true
+  allowed_classes:
+  - control
+  - endo
+  - exo
+preprocess:
+  wn_min: 930.0
+  wn_max: 1998.0
+  baseline_method: arpls
+  baseline_lam: 100000.0
+  baseline_p: 0.01
+  baseline_niter: 12
+  baseline_use_pybaselines: true
+  baseline_morph_window: 51
+  baseline_snip_max_half_window: 40
+  despike_enabled: false
+  despike_threshold: 8.0
+  despike_window: 5
+  despike_max_iter: 1
+  savgol_window: 11
+  savgol_poly: 3
+  derivative_order: 0
+  normalization: msc
+  outlier_filter: none
+  outlier_z_threshold: 4.5
+  outlier_min_keep: 12
+  outlier_min_per_class: 2
+model:
+  model_family: catboost
+  loss_function: MultiClass
+  eval_metric: TotalF1
+  iterations: 50
+  learning_rate: 0.08
+  depth: 6
+  l2_leaf_reg: 3.0
+  logreg_c: 1.0
+  logreg_max_iter: 2000
+  svm_c: 1.0
+  svm_gamma: scale
+  verbose: false
+validation:
+  n_splits: 5
+  split_kind: group_kfold
+  split_shuffle: false
+  split_seed: 42
+  local_holdout_groups: []

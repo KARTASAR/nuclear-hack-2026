@@ -1,0 +1,5 @@
+strategy,dev_overall_macro_f1_mean,dev_worst_slice_macro_f1,dev_worst_slice_name,lock_overall_macro_f1_mean,lock_worst_slice_macro_f1,lock_worst_slice_name,delta_lock_minus_dev_overall,delta_lock_minus_dev_worst,mk3_control_macro_f1,n_mk3_rows,is_dev_winner,is_lock_winner
+h1_router_fb_cortex_striatum,0.7807985166174821,0.7388203367513712,cerebellum_stress,0.7671433387812698,0.6895244517083597,cerebellum_stress,-0.013655177836212284,-0.04929588504301141,0.6457155700833862,3,false,true
+h1_primary_proxy_top3_top4_a007,0.7945049395049395,0.781271036655652,cerebellum_stress,0.5914575702075702,0.6034249084249085,cerebellum_stress,-0.20304736929736933,-0.17784612823074353,0.61002442002442,3,true,false
+h1_fallback_proxy_top1_top1_a017,0.613654580669825,0.5331047232773316,cerebellum_stress,0.6418787939579015,0.5225050586105353,cerebellum_stress,0.02822421328807645,-0.010599664666796293,0.5253089034022097,3,false,false
+h1_router_fb_cerebellum,0.6260836386807795,0.5739832817951475,cerebellum_stress,0.4692564434476199,0.4391495846201729,full_region,-0.15682719523315963,-0.13483369717497456,0.4977868681790251,3,false,false

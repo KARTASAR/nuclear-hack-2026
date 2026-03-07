@@ -1,0 +1,6 @@
+holdout_control,holdout_endo,holdout_exo,strategy,macro_f1,balanced_accuracy,accuracy
+mk1,mend2b,mexo2b,h1_train_fallback_a017,0.3332309267793139,0.3611111111111111,0.4
+mk1,mend2b,mexo2b,h1_train_primary_a007,0.2722271342960998,0.3055555555555555,0.3333333333333333
+mk1,mend2b,mexo2b,h1_train_random_router_p50,0.3332309267793139,0.3611111111111111,0.4
+mk1,mend2b,mexo2b,h1_train_router_fb_cortex_striatum,0.3332309267793139,0.3611111111111111,0.4
+mk1,mend2b,mexo2b,h1_train_router_region_permute_fb_cortex_striatum,0.26827551533433885,0.3055555555555555,0.3333333333333333

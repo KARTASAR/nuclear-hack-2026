@@ -1,0 +1,4 @@
+holdout_control,holdout_endo,holdout_exo,strategy,macro_f1,balanced_accuracy,accuracy
+mk3,mend2b,mexo2a,h1_train_fallback_a017,0.3800865800865801,0.47222222222222227,0.5
+mk3,mend2b,mexo2a,h1_train_primary_a007,0.3800865800865801,0.47222222222222227,0.5
+mk3,mend2b,mexo2a,h1_train_router_fb_cortex_striatum,0.3800865800865801,0.47222222222222227,0.5

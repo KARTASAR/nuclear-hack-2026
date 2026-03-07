@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raman-tissue-classifier"
+version = "0.1.0"
+description = "ML pipeline for Raman spectroscopy-based cancer tissue classification"
+authors = [{name = "Raman Classifier Team"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+    "scikit-learn>=1.0",
+    "torch>=2.0",
+    "pyyaml>=6.0",
+    "loguru>=0.6",
+    "pandas>=1.3",
+    "polars>=1.6",
+    "pyarrow>=17.0",
+    "catboost>=1.2",
+    "pybaselines>=1.1.0",
+    "hydra-core>=1.3",
+    "omegaconf>=2.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=3.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+    "pre-commit>=3.0",
+    "types-PyYAML",
+]
+viz = [
+    "matplotlib>=3.5",
+    "seaborn>=0.12",
+]
+
+[tool.setuptools.packages.find]
+where = [".", "src"]
+include = ["raman_hack*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"

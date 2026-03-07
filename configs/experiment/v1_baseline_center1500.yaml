@@ -1,0 +1,40 @@
+experiment:
+  name: v1_baseline_center1500
+  seed: 42
+  output_root: runs
+
+data:
+  root_dir: data/real
+  center: "1500"
+  sample_level: file_mean   # file_mean | point
+  point_max_per_file: 40
+  dataset_cache_enabled: true
+  dataset_cache_dir: .cache/raman_hack
+  exclude_average: true
+  exclude_anomaly_mismatch_center: true
+  allowed_classes: [control, endo, exo]
+
+preprocess:
+  wn_min: 930.0
+  wn_max: 1998.0
+  baseline_method: arpls    # none | als | airpls | arpls
+  baseline_lam: 100000.0
+  baseline_p: 0.01
+  baseline_niter: 15
+  savgol_window: 11
+  savgol_poly: 3
+  normalization: snv        # none | minmax | snv | msc | emsc
+
+model:
+  model_family: catboost
+  loss_function: MultiClass
+  eval_metric: TotalF1
+  thread_count: 4        # safe fast default for parallel sweeps
+  iterations: 350
+  learning_rate: 0.05
+  depth: 6
+  l2_leaf_reg: 3.0
+  verbose: false
+
+validation:
+  n_splits: 5

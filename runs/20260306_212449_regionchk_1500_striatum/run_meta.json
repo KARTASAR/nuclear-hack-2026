@@ -1,0 +1,203 @@
+{
+  "created_utc": "2026-03-06T21:24:49.257952+00:00",
+  "python_version": "3.11.14 (main, Oct 21 2025, 18:27:30) [Clang 20.1.8 ]",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "libraries": {
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "polars": "1.38.1",
+    "pyarrow": "23.0.1",
+    "scikit-learn": "1.8.0",
+    "catboost": "1.2.10",
+    "torch": "2.10.0",
+    "omegaconf": "2.3.0",
+    "hydra-core": "1.3.2"
+  },
+  "git_commit": "4bf7f0cd068ca7d0b489b753d1341f4fc7cf1728",
+  "git_dirty": true,
+  "config_hash_sha256": "81db86eb46eceef0f5b15e24f5d465deec72955e3ad1864c877ffe2c3dc1f713",
+  "data_fingerprint_sha256": "0a618bb90b754fe9af6f12a682d834d0853406c9021eb56b15afea720db44dab",
+  "n_used_files": 36,
+  "manifest_records": [
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2a/striatum_left_control_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 27151114,
+      "mtime_ns": 1762437188053142547
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2a/striatum_left_control_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27198186,
+      "mtime_ns": 1762437188908851623
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2a/striatum_left_control_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27779962,
+      "mtime_ns": 1762437189795719146
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2a/striatum_right_control_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27147409,
+      "mtime_ns": 1762437193267295837
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2a/striatum_right_control_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27229225,
+      "mtime_ns": 1762437194123022079
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2a/striatum_right_control_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 26659583,
+      "mtime_ns": 1762437194987745285
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2b/striatum_left_control_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 27176941,
+      "mtime_ns": 1762437290163990020
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2b/striatum_left_control_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27171849,
+      "mtime_ns": 1762437291050460815
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2b/striatum_left_control_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 26811913,
+      "mtime_ns": 1762437291952430725
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2b/striatum_right_control_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27163838,
+      "mtime_ns": 1762437295541862487
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2b/striatum_right_control_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27145942,
+      "mtime_ns": 1762437296422094345
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/control/mk2b/striatum_right_control_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 26886800,
+      "mtime_ns": 1762437297293378829
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2a/striatum_left_endo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 27827445,
+      "mtime_ns": 1762438436632425308
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2a/striatum_left_endo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 28209327,
+      "mtime_ns": 1762438490365621566
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2a/striatum_left_endo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27262150,
+      "mtime_ns": 1762438541232671737
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2a/striatum_right_endo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27179700,
+      "mtime_ns": 1762438463748065948
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2a/striatum_right_endo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27173518,
+      "mtime_ns": 1762438492101697921
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2a/striatum_right_endo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 27181448,
+      "mtime_ns": 1762438542973695755
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2b/striatum_left_endo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 27676855,
+      "mtime_ns": 1762438831613895416
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2b/striatum_left_endo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27174359,
+      "mtime_ns": 1762438870686861038
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2b/striatum_left_endo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27722065,
+      "mtime_ns": 1762438966456365585
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2b/striatum_right_endo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27704669,
+      "mtime_ns": 1762438833333511352
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2b/striatum_right_endo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 26184324,
+      "mtime_ns": 1762438893609039306
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/endo/mend2b/striatum_right_endo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 27708023,
+      "mtime_ns": 1762438968190795898
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2a/striatum_left_exo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 27186327,
+      "mtime_ns": 1762438310985239028
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2a/striatum_left_exo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27472548,
+      "mtime_ns": 1762438357352558135
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2a/striatum_left_exo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 27601201,
+      "mtime_ns": 1762438382913707733
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2a/striatum_right_exo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 27177669,
+      "mtime_ns": 1762438312790477752
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2a/striatum_right_exo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27203735,
+      "mtime_ns": 1762438359141077041
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2a/striatum_right_exo_2Agroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 27518299,
+      "mtime_ns": 1762438384665222167
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2b/striatum_left_exo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 26696324,
+      "mtime_ns": 1762438685128444671
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2b/striatum_left_exo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27183036,
+      "mtime_ns": 1762438685984128952
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2b/striatum_left_exo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 28192219,
+      "mtime_ns": 1762438743958053588
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2b/striatum_right_exo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 26669851,
+      "mtime_ns": 1762438688620496749
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2b/striatum_right_exo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27164508,
+      "mtime_ns": 1762438718246673583
+    },
+    {
+      "file_path": "tmp/region_check_data/striatum/exo/mexo2b/striatum_right_exo_2Bgroup_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 26107036,
+      "mtime_ns": 1762438771633790969
+    }
+  ]
+}

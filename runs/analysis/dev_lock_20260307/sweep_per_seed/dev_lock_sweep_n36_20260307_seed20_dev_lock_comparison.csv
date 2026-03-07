@@ -1,0 +1,5 @@
+strategy,dev_overall_macro_f1_mean,dev_worst_slice_macro_f1,dev_worst_slice_name,lock_overall_macro_f1_mean,lock_worst_slice_macro_f1,lock_worst_slice_name,delta_lock_minus_dev_overall,delta_lock_minus_dev_worst,is_dev_winner,is_lock_winner
+fallback_top1_top1_a017,0.5616527822313707,0.5642376464584347,cerebellum_stress,0.509385500925973,0.547457640526096,cerebellum_stress,-0.052267281305397706,-0.016780005932338637,true,true
+baseline1500_tuned2900_a011,0.5312004974687612,0.5412074641744247,cerebellum_stress,0.45734316840376715,0.4798245612386929,cerebellum_stress,-0.07385732906499404,-0.06138290293573179,false,false
+new_primary_top3_top4_a007,0.5529775122326167,0.4833843357934265,cerebellum_stress,0.4539354076822108,0.47191387690961434,cerebellum_stress,-0.09904210455040591,-0.011470458883812151,false,false
+old_single_old2900_a011,0.5500510892908507,0.5570280772737296,cerebellum_stress,0.4675728065140907,0.47121355414975924,cerebellum_stress,-0.08247828277675995,-0.08581452312397037,false,false

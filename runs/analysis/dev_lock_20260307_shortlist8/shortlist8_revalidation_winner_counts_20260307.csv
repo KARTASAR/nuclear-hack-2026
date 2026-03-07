@@ -1,0 +1,10 @@
+recommended_strategy,n_wins,tag
+fallback_top1_top1_a017,9,n24
+p2_top1_top3_a007,6,n24
+p2_top3_top1_a033,3,n24
+p2_top2_top4_a005,1,n24
+p2_top4_top4_a006,1,n24
+fallback_top1_top1_a017,9,n36
+p2_top1_top3_a007,6,n36
+p2_top3_top1_a033,4,n36
+p2_top4_top4_a006,1,n36

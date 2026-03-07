@@ -1,0 +1,39 @@
+experiment:
+  name: v1_baseline_center2900
+  seed: 42
+  output_root: runs
+
+data:
+  root_dir: data/real
+  center: "2900"
+  sample_level: file_mean
+  point_max_per_file: 40
+  dataset_cache_enabled: true
+  dataset_cache_dir: .cache/raman_hack
+  exclude_average: true
+  exclude_anomaly_mismatch_center: true
+  allowed_classes: [control, endo, exo]
+
+preprocess:
+  wn_min: 2460.0
+  wn_max: 3285.0
+  baseline_method: arpls
+  baseline_lam: 100000.0
+  baseline_p: 0.01
+  baseline_niter: 15
+  savgol_window: 11
+  savgol_poly: 3
+  normalization: snv
+
+model:
+  model_family: catboost
+  loss_function: MultiClass
+  eval_metric: TotalF1
+  iterations: 350
+  learning_rate: 0.05
+  depth: 6
+  l2_leaf_reg: 3.0
+  verbose: false
+
+validation:
+  n_splits: 5

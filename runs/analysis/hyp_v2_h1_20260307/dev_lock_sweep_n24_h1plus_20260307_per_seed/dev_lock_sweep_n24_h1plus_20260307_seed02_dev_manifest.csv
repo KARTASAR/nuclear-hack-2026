@@ -1,0 +1,17 @@
+split_id,holdout_control,holdout_endo,holdout_exo,region_coverage,is_full_region_holdout,is_control_cerebellum_only_mouse,is_endo_cerebellum_only_mouse,is_exo_cerebellum_only_mouse,n_cerebellum_only_mice_holdout,is_mk3_control_holdout,is_cerebellum_stress_holdout,split_name,regions_control_str,regions_endo_str,regions_exo_str,holdout_regions_str
+0,mk1,mend1,mexo3,2,false,0,0,1,1,false,true,000_mk1_mend1_mexo3,cortex,cortex,cerebellum,cerebellum|cortex
+3,mk1,mend3,mexo2a,3,true,0,1,0,1,false,true,003_mk1_mend3_mexo2a,cortex,cerebellum,cortex|striatum,cortex|striatum|cerebellum
+4,mk1,mend3,mexo2b,3,true,0,1,0,1,false,true,004_mk1_mend3_mexo2b,cortex,cerebellum,cortex|striatum,cortex|cerebellum|striatum
+6,mk2a,mend3,mexo1,3,true,0,1,0,1,false,true,006_mk2a_mend3_mexo1,cortex|striatum,cerebellum,cortex,cortex|striatum|cerebellum
+7,mk2a,mend3,mexo2a,3,true,0,1,0,1,false,true,007_mk2a_mend3_mexo2a,cortex|striatum,cerebellum,cortex|striatum,striatum|cerebellum|cortex
+8,mk2a,mend3,mexo2b,3,true,0,1,0,1,false,true,008_mk2a_mend3_mexo2b,cortex|striatum,cerebellum,cortex|striatum,cortex|cerebellum|striatum
+9,mk2a,mend3,mexo3,3,true,0,1,1,2,false,true,009_mk2a_mend3_mexo3,cortex|striatum,cerebellum,cerebellum,cortex|striatum|cerebellum
+10,mk2b,mend2a,mexo2a,2,false,0,0,0,0,false,false,010_mk2b_mend2a_mexo2a,cortex|striatum,cortex|striatum,cortex|striatum,cortex|striatum
+12,mk2b,mend3,mexo1,3,true,0,1,0,1,false,true,012_mk2b_mend3_mexo1,cortex|striatum,cerebellum,cortex,cerebellum|striatum|cortex
+14,mk3,mend1,mexo1,2,false,1,0,0,1,true,true,014_mk3_mend1_mexo1,cerebellum,cortex,cortex,cerebellum|cortex
+15,mk3,mend1,mexo2a,3,true,1,0,0,1,true,true,015_mk3_mend1_mexo2a,cerebellum,cortex,cortex|striatum,striatum|cortex|cerebellum
+16,mk3,mend2a,mexo1,3,true,1,0,0,1,true,true,016_mk3_mend2a_mexo1,cerebellum,cortex|striatum,cortex,striatum|cortex|cerebellum
+18,mk3,mend2a,mexo3,3,true,1,0,1,2,true,true,018_mk3_mend2a_mexo3,cerebellum,cortex|striatum,cerebellum,cortex|cerebellum|striatum
+19,mk3,mend2b,mexo1,3,true,1,0,0,1,true,true,019_mk3_mend2b_mexo1,cerebellum,cortex|striatum,cortex,cerebellum|striatum|cortex
+20,mk3,mend2b,mexo2b,3,true,1,0,0,1,true,true,020_mk3_mend2b_mexo2b,cerebellum,cortex|striatum,cortex|striatum,cortex|cerebellum|striatum
+23,mk3,mend3,mexo2b,3,true,1,1,0,2,true,true,023_mk3_mend3_mexo2b,cerebellum,cerebellum,cortex|striatum,cerebellum|cortex|striatum

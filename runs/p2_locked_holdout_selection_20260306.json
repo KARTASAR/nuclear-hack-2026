@@ -1,0 +1,38 @@
+{
+  "selected_by_cv": {
+    "ensemble_1500": "1500_top3",
+    "ensemble_2900": "2900_top4",
+    "alpha_1500": 0.07,
+    "alpha_2900": 0.9299999999999999,
+    "cv_macro_f1": 0.7887797839017351,
+    "cv_bal_acc": 0.7830065359477124,
+    "cv_accuracy": 0.78,
+    "holdout_macro_f1": 0.6481481481481483,
+    "holdout_bal_acc": 0.6666666666666666,
+    "holdout_accuracy": 0.6666666666666666
+  },
+  "best_holdout_diagnostic": {
+    "ensemble_1500": "1500_top1",
+    "ensemble_2900": "2900_top3",
+    "alpha_1500": 0.07,
+    "alpha_2900": 0.9299999999999999,
+    "cv_macro_f1": 0.7311103530615725,
+    "cv_bal_acc": 0.7565359477124183,
+    "cv_accuracy": 0.74,
+    "holdout_macro_f1": 0.7011784511784511,
+    "holdout_bal_acc": 0.7222222222222222,
+    "holdout_accuracy": 0.7222222222222222
+  },
+  "ranked_run_ids_1500": [
+    "20260306_205252_p2lk_1500_ramannet_ss11",
+    "20260306_205253_p2lk_1500_ramannet_ss22",
+    "20260306_205307_p2lk_1500_ramannet_ss33",
+    "20260306_205307_p2lk_1500_ramannet_ss42"
+  ],
+  "ranked_run_ids_2900": [
+    "20260306_205401_p2lk_2900_trpatch8_ss22",
+    "20260306_205512_p2lk_2900_trpatch8_ss42",
+    "20260306_205454_p2lk_2900_trpatch8_ss33",
+    "20260306_205400_p2lk_2900_trpatch8_ss11"
+  ]
+}

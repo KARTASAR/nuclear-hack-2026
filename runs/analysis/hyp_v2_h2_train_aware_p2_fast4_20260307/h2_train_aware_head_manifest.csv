@@ -1,0 +1,13 @@
+holdout_control,holdout_endo,holdout_exo,triplet_seed,region,n_rows_cv_region,n_classes_cv_region,head_source
+mk2a,mend3,mexo3,42,cortex,48,3,region_head
+mk2a,mend3,mexo3,42,striatum,30,3,region_head
+mk2a,mend3,mexo3,42,cerebellum,10,1,global_fallback
+mk3,mend2a,mexo1,42,cortex,42,3,region_head
+mk3,mend2a,mexo1,42,striatum,30,3,region_head
+mk3,mend2a,mexo1,42,cerebellum,18,2,region_head
+mk3,mend2a,mexo2a,42,cortex,42,3,region_head
+mk3,mend2a,mexo2a,42,striatum,24,3,region_head
+mk3,mend2a,mexo2a,42,cerebellum,18,2,region_head
+mk3,mend3,mexo2b,42,cortex,48,3,region_head
+mk3,mend3,mexo2b,42,striatum,30,3,region_head
+mk3,mend3,mexo2b,42,cerebellum,12,1,global_fallback

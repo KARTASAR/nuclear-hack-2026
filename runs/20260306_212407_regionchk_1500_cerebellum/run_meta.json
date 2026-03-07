@@ -1,0 +1,163 @@
+{
+  "created_utc": "2026-03-06T21:24:07.762040+00:00",
+  "python_version": "3.11.14 (main, Oct 21 2025, 18:27:30) [Clang 20.1.8 ]",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "libraries": {
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "polars": "1.38.1",
+    "pyarrow": "23.0.1",
+    "scikit-learn": "1.8.0",
+    "catboost": "1.2.10",
+    "torch": "2.10.0",
+    "omegaconf": "2.3.0",
+    "hydra-core": "1.3.2"
+  },
+  "git_commit": "4bf7f0cd068ca7d0b489b753d1341f4fc7cf1728",
+  "git_dirty": true,
+  "config_hash_sha256": "516f97607fcc446fd929addd84a64a9766e6c5da3bf20c8532d7082d0e36ff9e",
+  "data_fingerprint_sha256": "d9791ffeb0e7ac973832d090ec47bc33bf89b055b04a42e0f28e0e340e8231a1",
+  "n_used_files": 28,
+  "manifest_records": [
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_left_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 26628116,
+      "mtime_ns": 1744724004734170913
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_left_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 28262523,
+      "mtime_ns": 1744724005608966827
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_left_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27681950,
+      "mtime_ns": 1744724006499380111
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_left_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 28209328,
+      "mtime_ns": 1744724007358552932
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_left_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 28209348,
+      "mtime_ns": 1744724008233346939
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_right_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 26637911,
+      "mtime_ns": 1744724029072193145
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_right_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 28232362,
+      "mtime_ns": 1744724029931365966
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_right_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27691017,
+      "mtime_ns": 1744724030806159973
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_right_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 28209331,
+      "mtime_ns": 1744724031680955886
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/control/mk3/cerebellum_right_control_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 28209334,
+      "mtime_ns": 1744724032540100097
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/endo/mend3/cerebellum_left_endo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 27676466,
+      "mtime_ns": 1744724013482084274
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/endo/mend3/cerebellum_left_endo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27143605,
+      "mtime_ns": 1744724014356904983
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/endo/mend3/cerebellum_left_endo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 27200662,
+      "mtime_ns": 1744724015231685638
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/endo/mend3/cerebellum_right_endo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 27676459,
+      "mtime_ns": 1744724037742027282
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/endo/mend3/cerebellum_right_endo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27149817,
+      "mtime_ns": 1744724038601203918
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/endo/mend3/cerebellum_right_endo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 27155884,
+      "mtime_ns": 1744724039444751739
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_left_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_1.txt",
+      "size": 27654022,
+      "mtime_ns": 1744724018699634552
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_left_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_3.txt",
+      "size": 26764378,
+      "mtime_ns": 1744724019574401855
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_left_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_1.txt",
+      "size": 27166917,
+      "mtime_ns": 1744724020433574676
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_left_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_3.txt",
+      "size": 27177876,
+      "mtime_ns": 1744724021292774200
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_left_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_1.txt",
+      "size": 28224392,
+      "mtime_ns": 1744724022167568206
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_left_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_3.txt",
+      "size": 26784682,
+      "mtime_ns": 1744724023026714324
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_right_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_2.txt",
+      "size": 26716087,
+      "mtime_ns": 1744724042897066116
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_right_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place1_4.txt",
+      "size": 26842005,
+      "mtime_ns": 1744724043787483215
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_right_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_2.txt",
+      "size": 27186188,
+      "mtime_ns": 1744724044662275314
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_right_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place2_4.txt",
+      "size": 27217787,
+      "mtime_ns": 1744724045537069320
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_right_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_2.txt",
+      "size": 28210193,
+      "mtime_ns": 1744724046396242141
+    },
+    {
+      "file_path": "tmp/region_check_data/cerebellum/exo/mexo3/cerebellum_right_exo_3group_633nm_center1500_obj100_power100_1s_5acc_map35x15_step2_place3_4.txt",
+      "size": 28383846,
+      "mtime_ns": 1744724047255414962
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+split_id,holdout_control,holdout_endo,holdout_exo,region_coverage,is_full_region_holdout,is_control_cerebellum_only_mouse,is_endo_cerebellum_only_mouse,is_exo_cerebellum_only_mouse,n_cerebellum_only_mice_holdout,is_mk3_control_holdout,is_cerebellum_stress_holdout,split_name,regions_control_str,regions_endo_str,regions_exo_str,holdout_regions_str
+4,mk2a,mend1,mexo2b,2,false,0,0,0,0,false,false,004_mk2a_mend1_mexo2b,cortex|striatum,cortex,cortex|striatum,striatum|cortex
+8,mk2a,mend2a,mexo3,3,true,0,0,1,1,false,true,008_mk2a_mend2a_mexo3,cortex|striatum,cortex|striatum,cerebellum,striatum|cortex|cerebellum
+9,mk2a,mend2b,mexo1,2,false,0,0,0,0,false,false,009_mk2a_mend2b_mexo1,cortex|striatum,cortex|striatum,cortex,cortex|striatum
+12,mk2a,mend3,mexo2a,3,true,0,1,0,1,false,true,012_mk2a_mend3_mexo2a,cortex|striatum,cerebellum,cortex|striatum,striatum|cerebellum|cortex
+13,mk2b,mend1,mexo2a,2,false,0,0,0,0,false,false,013_mk2b_mend1_mexo2a,cortex|striatum,cortex,cortex|striatum,striatum|cortex
+14,mk2b,mend1,mexo3,3,true,0,0,1,1,false,true,014_mk2b_mend1_mexo3,cortex|striatum,cortex,cerebellum,striatum|cerebellum|cortex
+21,mk2b,mend3,mexo3,3,true,0,1,1,2,false,true,021_mk2b_mend3_mexo3,cortex|striatum,cerebellum,cerebellum,cerebellum|cortex|striatum
+22,mk3,mend1,mexo1,2,false,1,0,0,1,true,true,022_mk3_mend1_mexo1,cerebellum,cortex,cortex,cerebellum|cortex
+24,mk3,mend1,mexo2b,3,true,1,0,0,1,true,true,024_mk3_mend1_mexo2b,cerebellum,cortex,cortex|striatum,cerebellum|cortex|striatum
+31,mk3,mend2b,mexo2b,3,true,1,0,0,1,true,true,031_mk3_mend2b_mexo2b,cerebellum,cortex|striatum,cortex|striatum,striatum|cortex|cerebellum
+32,mk3,mend2b,mexo3,3,true,1,0,1,2,true,true,032_mk3_mend2b_mexo3,cerebellum,cortex|striatum,cerebellum,cerebellum|cortex|striatum
+34,mk3,mend3,mexo2b,3,true,1,1,0,2,true,true,034_mk3_mend3_mexo2b,cerebellum,cerebellum,cortex|striatum,cortex|cerebellum|striatum

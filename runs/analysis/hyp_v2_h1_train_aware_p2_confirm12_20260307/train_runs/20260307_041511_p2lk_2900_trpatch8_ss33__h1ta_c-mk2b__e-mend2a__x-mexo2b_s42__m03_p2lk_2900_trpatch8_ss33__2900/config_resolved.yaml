@@ -1,0 +1,99 @@
+experiment:
+  name: p2lk_2900_trpatch8_ss33__h1ta_c-mk2b__e-mend2a__x-mexo2b_s42__m03_p2lk_2900_trpatch8_ss33__2900
+  seed: 145
+  output_root: runs/analysis/hyp_v2_h1_train_aware_p2_confirm12_20260307/train_runs
+data:
+  root_dir: data/real
+  center: '2900'
+  sample_level: file_mean
+  point_max_per_file: 8
+  dataset_cache_enabled: true
+  dataset_cache_dir: .cache/raman_hack
+  exclude_average: true
+  exclude_anomaly_mismatch_center: true
+  strict_filename_match: false
+  require_all_classes: true
+  allowed_classes:
+  - control
+  - endo
+  - exo
+preprocess:
+  wn_min: 2460.0
+  wn_max: 3285.0
+  baseline_method: airpls
+  baseline_lam: 100000.0
+  baseline_p: 0.01
+  baseline_niter: 12
+  baseline_use_pybaselines: true
+  baseline_morph_window: 51
+  baseline_snip_max_half_window: 40
+  despike_enabled: true
+  despike_threshold: 8.0
+  despike_window: 5
+  despike_max_iter: 1
+  savgol_window: 11
+  savgol_poly: 3
+  derivative_order: 0
+  normalization: snv
+  outlier_filter: none
+  outlier_z_threshold: 4.5
+  outlier_min_keep: 12
+  outlier_min_per_class: 2
+model:
+  model_family: spectral_transformer
+  loss_function: MultiClass
+  eval_metric: TotalF1
+  iterations: 400
+  learning_rate: 0.05
+  depth: 6
+  l2_leaf_reg: 3.0
+  logreg_c: 1.0
+  logreg_max_iter: 2000
+  svm_c: 1.0
+  svm_gamma: scale
+  thread_count: 4
+  verbose: false
+  torch_epochs: 25
+  torch_batch_size: 32
+  torch_lr: 0.0008
+  torch_weight_decay: 0.0002
+  torch_patience: 5
+  torch_device: auto
+  resnet_base_ch: 32
+  resnet_blocks:
+  - 2
+  - 2
+  - 2
+  resnet_dropout: 0.1
+  ramannet_segments: 64
+  ramannet_embed_dim: 64
+  ramannet_dropout: 0.1
+  transformer_patch_size: 8
+  transformer_d_model: 128
+  transformer_nhead: 4
+  transformer_num_layers: 3
+  transformer_dim_ff: 256
+  transformer_dropout: 0.1
+  inception_base_ch: 32
+  inception_dropout: 0.1
+  drsn_base_ch: 32
+  drsn_blocks:
+  - 2
+  - 2
+  - 2
+  efficientnet_width_mult: 1.0
+  efficientnet_dropout: 0.2
+  single_step_preproc_channels: 32
+  single_step_preproc_blocks: 3
+  single_step_unet_base_ch: 16
+  single_step_head: ramannet
+  single_step_head_dropout: 0.1
+validation:
+  n_splits: 5
+  split_kind: stratified_group_kfold
+  split_shuffle: true
+  split_seed: 33
+  local_holdout_groups:
+  - mk2b
+  - mend2a
+  - mexo2b

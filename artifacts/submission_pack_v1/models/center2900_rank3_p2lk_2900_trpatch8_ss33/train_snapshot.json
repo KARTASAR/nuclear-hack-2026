@@ -1,0 +1,15 @@
+{
+  "run_id": "20260306_205454_p2lk_2900_trpatch8_ss33",
+  "center": "2900",
+  "sample_level": "file_mean",
+  "model_family": "spectral_transformer",
+  "n_samples_full": 118,
+  "n_samples_fit": 118,
+  "n_features_after_preprocess": 1008,
+  "n_outlier_removed": 0,
+  "class_names": [
+    "control",
+    "endo",
+    "exo"
+  ]
+}

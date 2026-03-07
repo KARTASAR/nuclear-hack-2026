@@ -1,0 +1,280 @@
+{
+  "accuracy": 0.6382978723404256,
+  "macro_f1": 0.6271180330232894,
+  "weighted_f1": 0.6312678052844013,
+  "balanced_accuracy": 0.6339869281045751,
+  "log_loss": 1.142113939951783,
+  "confusion_matrix": [
+    [
+      25,
+      6,
+      3
+    ],
+    [
+      5,
+      13,
+      12
+    ],
+    [
+      5,
+      3,
+      22
+    ]
+  ],
+  "classification_report": {
+    "control": {
+      "precision": 0.7142857142857143,
+      "recall": 0.7352941176470589,
+      "f1-score": 0.7246376811594203,
+      "support": 34.0
+    },
+    "endo": {
+      "precision": 0.5909090909090909,
+      "recall": 0.43333333333333335,
+      "f1-score": 0.5,
+      "support": 30.0
+    },
+    "exo": {
+      "precision": 0.5945945945945946,
+      "recall": 0.7333333333333333,
+      "f1-score": 0.6567164179104478,
+      "support": 30.0
+    },
+    "accuracy": 0.6382978723404256,
+    "macro avg": {
+      "precision": 0.6332631332631333,
+      "recall": 0.6339869281045751,
+      "f1-score": 0.6271180330232894,
+      "support": 94.0
+    },
+    "weighted avg": {
+      "precision": 0.6367109026683495,
+      "recall": 0.6382978723404256,
+      "f1-score": 0.6312678052844013,
+      "support": 94.0
+    }
+  },
+  "auc_ovr_macro": 0.7415645424836601,
+  "folds": [
+    {
+      "fold": 1,
+      "n_train": 70,
+      "n_train_after_outlier": 70,
+      "n_train_outlier_removed": 0,
+      "n_valid": 24,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.4375,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.5,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 2,
+      "n_train": 72,
+      "n_train_after_outlier": 72,
+      "n_train_outlier_removed": 0,
+      "n_valid": 22,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.40075973409306737,
+      "balanced_accuracy": 0.5666666666666667,
+      "accuracy": 0.5909090909090909,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 3,
+      "n_train": 76,
+      "n_train_after_outlier": 76,
+      "n_train_outlier_removed": 0,
+      "n_valid": 18,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.5178571428571428,
+      "balanced_accuracy": 0.5416666666666666,
+      "accuracy": 0.6666666666666666,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 4,
+      "n_train": 76,
+      "n_train_after_outlier": 76,
+      "n_train_outlier_removed": 0,
+      "n_valid": 18,
+      "n_train_groups": 7,
+      "n_valid_groups": 2,
+      "macro_f1": 0.5178571428571428,
+      "balanced_accuracy": 0.5416666666666666,
+      "accuracy": 0.6666666666666666,
+      "auc_ovr_macro": NaN
+    },
+    {
+      "fold": 5,
+      "n_train": 82,
+      "n_train_after_outlier": 82,
+      "n_train_outlier_removed": 0,
+      "n_valid": 12,
+      "n_train_groups": 8,
+      "n_valid_groups": 1,
+      "macro_f1": 0.4782608695652174,
+      "balanced_accuracy": 0.9166666666666666,
+      "accuracy": 0.9166666666666666,
+      "auc_ovr_macro": NaN
+    }
+  ],
+  "class_to_int": {
+    "control": 0,
+    "endo": 1,
+    "exo": 2
+  },
+  "n_samples": 118,
+  "n_features_raw": 1015,
+  "n_cv_samples": 94,
+  "n_holdout_samples": 24,
+  "holdout_groups": [
+    "mk1",
+    "mend3",
+    "mexo2a"
+  ],
+  "outlier_filter": "none",
+  "region_metrics_cv": {
+    "cerebellum": {
+      "n_samples": 22,
+      "n_unique_classes_true": 2,
+      "class_distribution_true": {
+        "control": 10,
+        "endo": 0,
+        "exo": 12
+      },
+      "macro_f1": 0.43162393162393164,
+      "balanced_accuracy": 0.5666666666666667,
+      "accuracy": 0.5909090909090909,
+      "auc_ovr_macro": NaN
+    },
+    "cortex": {
+      "n_samples": 42,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 12,
+        "endo": 18,
+        "exo": 12
+      },
+      "macro_f1": 0.6141975308641975,
+      "balanced_accuracy": 0.6481481481481483,
+      "accuracy": 0.6190476190476191,
+      "auc_ovr_macro": 0.7805555555555556
+    },
+    "striatum": {
+      "n_samples": 30,
+      "n_unique_classes_true": 3,
+      "class_distribution_true": {
+        "control": 12,
+        "endo": 12,
+        "exo": 6
+      },
+      "macro_f1": 0.6794643613865582,
+      "balanced_accuracy": 0.7222222222222222,
+      "accuracy": 0.7,
+      "auc_ovr_macro": 0.7978395061728395
+    }
+  },
+  "local_holdout_metrics": {
+    "accuracy": 0.6666666666666666,
+    "macro_f1": 0.5437229437229437,
+    "weighted_f1": 0.6077922077922079,
+    "balanced_accuracy": 0.5555555555555555,
+    "log_loss": 0.7418505065673009,
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        3
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        0,
+        0,
+        12
+      ]
+    ],
+    "classification_report": {
+      "control": {
+        "precision": 0.6,
+        "recall": 0.5,
+        "f1-score": 0.5454545454545454,
+        "support": 6.0
+      },
+      "endo": {
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1-score": 0.2857142857142857,
+        "support": 6.0
+      },
+      "exo": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1-score": 0.8,
+        "support": 12.0
+      },
+      "accuracy": 0.6666666666666666,
+      "macro avg": {
+        "precision": 0.7555555555555555,
+        "recall": 0.5555555555555555,
+        "f1-score": 0.5437229437229437,
+        "support": 24.0
+      },
+      "weighted avg": {
+        "precision": 0.7333333333333334,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6077922077922079,
+        "support": 24.0
+      }
+    },
+    "auc_ovr_macro": 0.8564814814814815
+  },
+  "region_metrics_holdout": {
+    "cerebellum": {
+      "n_samples": 6,
+      "n_unique_classes_true": 1,
+      "class_distribution_true": {
+        "control": 0,
+        "endo": 6,
+        "exo": 0
+      },
+      "macro_f1": 0.09523809523809523,
+      "balanced_accuracy": 0.16666666666666666,
+      "accuracy": 0.16666666666666666,
+      "auc_ovr_macro": NaN
+    },
+    "cortex": {
+      "n_samples": 12,
+      "n_unique_classes_true": 2,
+      "class_distribution_true": {
+        "control": 6,
+        "endo": 0,
+        "exo": 6
+      },
+      "macro_f1": 0.7333333333333334,
+      "balanced_accuracy": 0.75,
+      "accuracy": 0.75,
+      "auc_ovr_macro": NaN
+    },
+    "striatum": {
+      "n_samples": 6,
+      "n_unique_classes_true": 1,
+      "class_distribution_true": {
+        "control": 0,
+        "endo": 0,
+        "exo": 6
+      },
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "accuracy": 1.0,
+      "auc_ovr_macro": NaN
+    }
+  }
+}

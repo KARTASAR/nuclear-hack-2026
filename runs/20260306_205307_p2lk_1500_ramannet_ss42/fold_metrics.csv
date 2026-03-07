@@ -1,0 +1,6 @@
+fold,n_train,n_train_after_outlier,n_train_outlier_removed,n_valid,n_train_groups,n_valid_groups,macro_f1,balanced_accuracy,accuracy,auc_ovr_macro
+1,76,76,0,24,7,2,0.5636363636363637,0.625,0.625,NaN
+2,76,76,0,24,7,2,0.1812865497076023,0.25,0.25,NaN
+3,78,78,0,22,7,2,0.4830917874396135,0.625,0.6363636363636364,NaN
+4,88,88,0,12,8,1,0.25,0.3333333333333333,0.3333333333333333,NaN
+5,82,82,0,18,7,2,0.28,0.41666666666666663,0.5,NaN

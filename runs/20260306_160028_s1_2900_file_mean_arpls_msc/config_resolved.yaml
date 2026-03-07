@@ -1,0 +1,38 @@
+experiment:
+  name: s1_2900_file_mean_arpls_msc
+  seed: 42
+  output_root: runs
+data:
+  root_dir: data/real
+  center: '2900'
+  sample_level: file_mean
+  point_max_per_file: 8
+  exclude_average: true
+  exclude_anomaly_mismatch_center: true
+  strict_filename_match: false
+  require_all_classes: true
+  allowed_classes:
+  - control
+  - endo
+  - exo
+preprocess:
+  wn_min: 2460.0
+  wn_max: 3285.0
+  baseline_method: arpls
+  baseline_lam: 100000.0
+  baseline_p: 0.01
+  baseline_niter: 12
+  savgol_window: 11
+  savgol_poly: 3
+  normalization: msc
+model:
+  loss_function: MultiClass
+  eval_metric: TotalF1
+  iterations: 50
+  learning_rate: 0.08
+  depth: 6
+  l2_leaf_reg: 3.0
+  verbose: false
+validation:
+  n_splits: 3
+  local_holdout_groups: []

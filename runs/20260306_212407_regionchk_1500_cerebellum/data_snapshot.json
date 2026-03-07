@@ -1,0 +1,31 @@
+{
+  "root_dir": "tmp/region_check_data/cerebellum",
+  "center_filter": "1500",
+  "sample_level": "file_mean",
+  "cache_hit": false,
+  "cache_key": "3846d3059265338fdeb2c3f1ddde5c35a300540e6789bb268a2e0100d825dc34",
+  "cache_dir": ".cache/raman_hack/3846d3059265338fdeb2c3f1ddde5c35a300540e6789bb268a2e0100d825dc34",
+  "n_files_total": 56,
+  "n_files_used": 28,
+  "n_samples": 28,
+  "n_features": 1015,
+  "skipped": {
+    "class_filtered": 0,
+    "average_filtered": 0,
+    "center_filtered": 28,
+    "center_mismatch_filtered": 0,
+    "filename_unmatched_filtered": 0,
+    "parse_errors": 0
+  },
+  "class_distribution": {
+    "control": 10,
+    "endo": 6,
+    "exo": 12
+  },
+  "anomaly_examples": {
+    "parse_errors": [],
+    "center_mismatch": [],
+    "filename_unmatched": []
+  },
+  "n_unique_groups": 3
+}

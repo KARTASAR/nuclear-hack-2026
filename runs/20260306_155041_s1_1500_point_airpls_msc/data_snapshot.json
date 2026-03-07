@@ -1,0 +1,30 @@
+{
+  "root_dir": "data/real",
+  "center_filter": "1500",
+  "sample_level": "point",
+  "n_files_total": 239,
+  "n_files_used": 118,
+  "n_samples": 944,
+  "n_features": 1015,
+  "skipped": {
+    "class_filtered": 0,
+    "average_filtered": 2,
+    "center_filtered": 118,
+    "center_mismatch_filtered": 1,
+    "filename_unmatched_filtered": 0,
+    "parse_errors": 0
+  },
+  "class_distribution": {
+    "control": 320,
+    "endo": 288,
+    "exo": 336
+  },
+  "anomaly_examples": {
+    "parse_errors": [],
+    "center_mismatch": [
+      "data/real/endo/mend1/cortex_endo_1group_633nm_center2900_obj100_power100_1s_5acc_map35x15_step2_place2.txt"
+    ],
+    "filename_unmatched": []
+  },
+  "n_unique_groups": 12
+}

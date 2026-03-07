@@ -1,0 +1,82 @@
+{
+  "selection_json": "runs/p2_locked_holdout_selection_20260306.json",
+  "sample_meta": "runs/20260306_213305_v1_smoke_center1500_fast/sample_meta.parquet",
+  "runs_root": "runs",
+  "fallback_alpha_1500": 0.17,
+  "primary_alpha_1500": 0.07,
+  "router_policies": [
+    {
+      "strategy": "h1_router_fb_cerebellum",
+      "fallback_regions": [
+        "cerebellum"
+      ]
+    },
+    {
+      "strategy": "h1_router_fb_cortex_striatum",
+      "fallback_regions": [
+        "cortex",
+        "striatum"
+      ]
+    },
+    {
+      "strategy": "h1_router_allpol_000_all_primary",
+      "fallback_regions": [],
+      "auto_generated_family": "all_region_policies"
+    },
+    {
+      "strategy": "h1_router_allpol_001_fb_cerebellum",
+      "fallback_regions": [
+        "cerebellum"
+      ],
+      "auto_generated_family": "all_region_policies"
+    },
+    {
+      "strategy": "h1_router_allpol_010_fb_striatum",
+      "fallback_regions": [
+        "striatum"
+      ],
+      "auto_generated_family": "all_region_policies"
+    },
+    {
+      "strategy": "h1_router_allpol_011_fb_cerebellum_striatum",
+      "fallback_regions": [
+        "cerebellum",
+        "striatum"
+      ],
+      "auto_generated_family": "all_region_policies"
+    },
+    {
+      "strategy": "h1_router_allpol_100_fb_cortex",
+      "fallback_regions": [
+        "cortex"
+      ],
+      "auto_generated_family": "all_region_policies"
+    },
+    {
+      "strategy": "h1_router_allpol_101_fb_cerebellum_cortex",
+      "fallback_regions": [
+        "cerebellum",
+        "cortex"
+      ],
+      "auto_generated_family": "all_region_policies"
+    },
+    {
+      "strategy": "h1_router_allpol_110_fb_cortex_striatum",
+      "fallback_regions": [
+        "cortex",
+        "striatum"
+      ],
+      "auto_generated_family": "all_region_policies"
+    },
+    {
+      "strategy": "h1_router_allpol_111_fb_cerebellum_cortex_striatum",
+      "fallback_regions": [
+        "cerebellum",
+        "cortex",
+        "striatum"
+      ],
+      "auto_generated_family": "all_region_policies"
+    }
+  ],
+  "base_battery": ""
+}

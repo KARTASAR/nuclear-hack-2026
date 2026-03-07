@@ -1,0 +1,2 @@
+recommended_strategy,dev_winner,lock_winner,dev_winner_overall,dev_winner_worst_slice,lock_winner_overall,lock_winner_worst_slice,overall_tolerance,dev_lock_agree,n_candidates,n_balanced_triplets,n_dev_triplets,n_lock_triplets
+fallback_top1_top1_a017,fallback_top1_top1_a017,fallback_top1_top1_a017,0.5518994943540362,0.49241917542164043,0.4931298003208758,0.5182050357473698,0.01,true,4,36,24,12

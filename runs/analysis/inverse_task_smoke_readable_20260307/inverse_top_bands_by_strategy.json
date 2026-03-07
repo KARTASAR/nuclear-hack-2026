@@ -1,0 +1,497 @@
+[
+  {
+    "strategy": "fallback_top1_top1_a017",
+    "top_bands": [
+      {
+        "center": "2900",
+        "band_id": 11,
+        "wn_start": 2900.8125,
+        "wn_end": 2940.519531,
+        "weighted_score": 9.00514306259378,
+        "score_mean_f": 10.849569954932266
+      },
+      {
+        "center": "2900",
+        "band_id": 6,
+        "wn_start": 2700.847656,
+        "wn_end": 2739.902344,
+        "weighted_score": 8.68515397128419,
+        "score_mean_f": 10.464040929258061
+      },
+      {
+        "center": "2900",
+        "band_id": 16,
+        "wn_start": 3101.227539,
+        "wn_end": 3140.674805,
+        "weighted_score": 7.432701443742014,
+        "score_mean_f": 8.955061980412065
+      },
+      {
+        "center": "2900",
+        "band_id": 7,
+        "wn_start": 2740.74707,
+        "wn_end": 2780.279297,
+        "weighted_score": 7.071861816826525,
+        "score_mean_f": 8.520315441959669
+      },
+      {
+        "center": "2900",
+        "band_id": 8,
+        "wn_start": 2781.117188,
+        "wn_end": 2820.28125,
+        "weighted_score": 6.076972554273608,
+        "score_mean_f": 7.321653679847721
+      },
+      {
+        "center": "2900",
+        "band_id": 1,
+        "wn_start": 2501.051758,
+        "wn_end": 2540.145508,
+        "weighted_score": 5.608436878029083,
+        "score_mean_f": 6.757152865095281
+      },
+      {
+        "center": "2900",
+        "band_id": 10,
+        "wn_start": 2860.736328,
+        "wn_end": 2899.999023,
+        "weighted_score": 5.566693171828026,
+        "score_mean_f": 6.7068592431662974
+      },
+      {
+        "center": "2900",
+        "band_id": 5,
+        "wn_start": 2661.4375,
+        "wn_end": 2699.995117,
+        "weighted_score": 5.259207877788247,
+        "score_mean_f": 6.336395033479817
+      },
+      {
+        "center": "2900",
+        "band_id": 2,
+        "wn_start": 2541.030273,
+        "wn_end": 2580.655273,
+        "weighted_score": 5.227990354127541,
+        "score_mean_f": 6.2987835591898085
+      },
+      {
+        "center": "2900",
+        "band_id": 20,
+        "wn_start": 3261.345703,
+        "wn_end": 3284.467773,
+        "weighted_score": 5.051043213346909,
+        "score_mean_f": 6.085594232948083
+      },
+      {
+        "center": "2900",
+        "band_id": 17,
+        "wn_start": 3141.444336,
+        "wn_end": 3180.522461,
+        "weighted_score": 5.038696080292563,
+        "score_mean_f": 6.0707181690271845
+      },
+      {
+        "center": "2900",
+        "band_id": 15,
+        "wn_start": 3061.413086,
+        "wn_end": 3100.450195,
+        "weighted_score": 4.757472742772399,
+        "score_mean_f": 5.73189487081012
+      },
+      {
+        "center": "2900",
+        "band_id": 14,
+        "wn_start": 3021.227539,
+        "wn_end": 3060.628906,
+        "weighted_score": 4.266791695391497,
+        "score_mean_f": 5.140712886013852
+      },
+      {
+        "center": "2900",
+        "band_id": 12,
+        "wn_start": 2941.326172,
+        "wn_end": 2980.663086,
+        "weighted_score": 4.247479214547475,
+        "score_mean_f": 5.117444836804188
+      },
+      {
+        "center": "2900",
+        "band_id": 9,
+        "wn_start": 2821.111328,
+        "wn_end": 2859.914063,
+        "weighted_score": 4.12445360966292,
+        "score_mean_f": 4.969221216461349
+      },
+      {
+        "center": "2900",
+        "band_id": 13,
+        "wn_start": 2981.461914,
+        "wn_end": 3020.435547,
+        "weighted_score": 4.1016140622085375,
+        "score_mean_f": 4.941703689407877
+      },
+      {
+        "center": "2900",
+        "band_id": 4,
+        "wn_start": 2620.798828,
+        "wn_end": 2660.577148,
+        "weighted_score": 4.009939739785904,
+        "score_mean_f": 4.8312526985372335
+      },
+      {
+        "center": "1500",
+        "band_id": 13,
+        "wn_start": 1451.255859,
+        "wn_end": 1489.476563,
+        "weighted_score": 3.207464586355833,
+        "score_mean_f": 18.867438743269606
+      },
+      {
+        "center": "2900",
+        "band_id": 0,
+        "wn_start": 2460.719727,
+        "wn_end": 2500.15918,
+        "weighted_score": 3.1487251094506803,
+        "score_mean_f": 3.7936447101815425
+      },
+      {
+        "center": "2900",
+        "band_id": 19,
+        "wn_start": 3220.75293,
+        "wn_end": 3260.597656,
+        "weighted_score": 1.8324398937996669,
+        "score_mean_f": 2.20775890819237
+      }
+    ]
+  },
+  {
+    "strategy": "h1_router_fb_cortex_striatum",
+    "top_bands": [
+      {
+        "center": "2900",
+        "band_id": 11,
+        "wn_start": 2900.8125,
+        "wn_end": 2940.519531,
+        "weighted_score": 9.26259048525319,
+        "score_mean_f": 10.849569954932266
+      },
+      {
+        "center": "2900",
+        "band_id": 6,
+        "wn_start": 2700.847656,
+        "wn_end": 2739.902344,
+        "weighted_score": 8.93345324757167,
+        "score_mean_f": 10.464040929258061
+      },
+      {
+        "center": "2900",
+        "band_id": 16,
+        "wn_start": 3101.227539,
+        "wn_end": 3140.674805,
+        "weighted_score": 7.645194439887384,
+        "score_mean_f": 8.955061980412065
+      },
+      {
+        "center": "2900",
+        "band_id": 7,
+        "wn_start": 2740.74707,
+        "wn_end": 2780.279297,
+        "weighted_score": 7.274038793415398,
+        "score_mean_f": 8.520315441959669
+      },
+      {
+        "center": "2900",
+        "band_id": 8,
+        "wn_start": 2781.117188,
+        "wn_end": 2820.28125,
+        "weighted_score": 6.250706709388639,
+        "score_mean_f": 7.321653679847721
+      },
+      {
+        "center": "2900",
+        "band_id": 1,
+        "wn_start": 2501.051758,
+        "wn_end": 2540.145508,
+        "weighted_score": 5.768776098556767,
+        "score_mean_f": 6.757152865095281
+      },
+      {
+        "center": "2900",
+        "band_id": 10,
+        "wn_start": 2860.736328,
+        "wn_end": 2899.999023,
+        "weighted_score": 5.725838984377735,
+        "score_mean_f": 6.7068592431662974
+      },
+      {
+        "center": "2900",
+        "band_id": 5,
+        "wn_start": 2661.4375,
+        "wn_end": 2699.995117,
+        "weighted_score": 5.409563014175904,
+        "score_mean_f": 6.336395033479817
+      },
+      {
+        "center": "2900",
+        "band_id": 2,
+        "wn_start": 2541.030273,
+        "wn_end": 2580.655273,
+        "weighted_score": 5.377453014854078,
+        "score_mean_f": 6.2987835591898085
+      },
+      {
+        "center": "2900",
+        "band_id": 20,
+        "wn_start": 3261.345703,
+        "wn_end": 3284.467773,
+        "weighted_score": 5.195447144298219,
+        "score_mean_f": 6.085594232948083
+      },
+      {
+        "center": "2900",
+        "band_id": 17,
+        "wn_start": 3141.444336,
+        "wn_end": 3180.522461,
+        "weighted_score": 5.182747019896597,
+        "score_mean_f": 6.0707181690271845
+      },
+      {
+        "center": "2900",
+        "band_id": 15,
+        "wn_start": 3061.413086,
+        "wn_end": 3100.450195,
+        "weighted_score": 4.893483807503486,
+        "score_mean_f": 5.73189487081012
+      },
+      {
+        "center": "2900",
+        "band_id": 14,
+        "wn_start": 3021.227539,
+        "wn_end": 3060.628906,
+        "weighted_score": 4.3887747130257235,
+        "score_mean_f": 5.140712886013852
+      },
+      {
+        "center": "2900",
+        "band_id": 12,
+        "wn_start": 2941.326172,
+        "wn_end": 2980.663086,
+        "weighted_score": 4.368910108980117,
+        "score_mean_f": 5.117444836804188
+      },
+      {
+        "center": "2900",
+        "band_id": 9,
+        "wn_start": 2821.111328,
+        "wn_end": 2859.914063,
+        "weighted_score": 4.242367333443358,
+        "score_mean_f": 4.969221216461349
+      },
+      {
+        "center": "2900",
+        "band_id": 13,
+        "wn_start": 2981.461914,
+        "wn_end": 3020.435547,
+        "weighted_score": 4.218874827719911,
+        "score_mean_f": 4.941703689407877
+      },
+      {
+        "center": "2900",
+        "band_id": 4,
+        "wn_start": 2620.798828,
+        "wn_end": 2660.577148,
+        "weighted_score": 4.124579634327465,
+        "score_mean_f": 4.8312526985372335
+      },
+      {
+        "center": "2900",
+        "band_id": 0,
+        "wn_start": 2460.719727,
+        "wn_end": 2500.15918,
+        "weighted_score": 3.238743797488886,
+        "score_mean_f": 3.7936447101815425
+      },
+      {
+        "center": "1500",
+        "band_id": 13,
+        "wn_start": 1451.255859,
+        "wn_end": 1489.476563,
+        "weighted_score": 2.75976265007486,
+        "score_mean_f": 18.867438743269606
+      },
+      {
+        "center": "2900",
+        "band_id": 19,
+        "wn_start": 3220.75293,
+        "wn_end": 3260.597656,
+        "weighted_score": 1.884827393316096,
+        "score_mean_f": 2.20775890819237
+      }
+    ]
+  },
+  {
+    "strategy": "new_primary_top3_top4_a007",
+    "top_bands": [
+      {
+        "center": "2900",
+        "band_id": 11,
+        "wn_start": 2900.8125,
+        "wn_end": 2940.519531,
+        "weighted_score": 10.090100058087007,
+        "score_mean_f": 10.849569954932266
+      },
+      {
+        "center": "2900",
+        "band_id": 6,
+        "wn_start": 2700.847656,
+        "wn_end": 2739.902344,
+        "weighted_score": 9.731558064209997,
+        "score_mean_f": 10.464040929258061
+      },
+      {
+        "center": "2900",
+        "band_id": 16,
+        "wn_start": 3101.227539,
+        "wn_end": 3140.674805,
+        "weighted_score": 8.32820764178322,
+        "score_mean_f": 8.955061980412065
+      },
+      {
+        "center": "2900",
+        "band_id": 7,
+        "wn_start": 2740.74707,
+        "wn_end": 2780.279297,
+        "weighted_score": 7.9238933610224915,
+        "score_mean_f": 8.520315441959669
+      },
+      {
+        "center": "2900",
+        "band_id": 8,
+        "wn_start": 2781.117188,
+        "wn_end": 2820.28125,
+        "weighted_score": 6.80913792225838,
+        "score_mean_f": 7.321653679847721
+      },
+      {
+        "center": "2900",
+        "band_id": 1,
+        "wn_start": 2501.051758,
+        "wn_end": 2540.145508,
+        "weighted_score": 6.284152164538611,
+        "score_mean_f": 6.757152865095281
+      },
+      {
+        "center": "2900",
+        "band_id": 10,
+        "wn_start": 2860.736328,
+        "wn_end": 2899.999023,
+        "weighted_score": 6.2373790961446565,
+        "score_mean_f": 6.7068592431662974
+      },
+      {
+        "center": "2900",
+        "band_id": 5,
+        "wn_start": 2661.4375,
+        "wn_end": 2699.995117,
+        "weighted_score": 5.892847381136229,
+        "score_mean_f": 6.336395033479817
+      },
+      {
+        "center": "2900",
+        "band_id": 2,
+        "wn_start": 2541.030273,
+        "wn_end": 2580.655273,
+        "weighted_score": 5.857868710046522,
+        "score_mean_f": 6.2987835591898085
+      },
+      {
+        "center": "2900",
+        "band_id": 20,
+        "wn_start": 3261.345703,
+        "wn_end": 3284.467773,
+        "weighted_score": 5.659602636641718,
+        "score_mean_f": 6.085594232948083
+      },
+      {
+        "center": "2900",
+        "band_id": 17,
+        "wn_start": 3141.444336,
+        "wn_end": 3180.522461,
+        "weighted_score": 5.645767897195281,
+        "score_mean_f": 6.0707181690271845
+      },
+      {
+        "center": "2900",
+        "band_id": 15,
+        "wn_start": 3061.413086,
+        "wn_end": 3100.450195,
+        "weighted_score": 5.330662229853411,
+        "score_mean_f": 5.73189487081012
+      },
+      {
+        "center": "2900",
+        "band_id": 14,
+        "wn_start": 3021.227539,
+        "wn_end": 3060.628906,
+        "weighted_score": 4.780862983992883,
+        "score_mean_f": 5.140712886013852
+      },
+      {
+        "center": "2900",
+        "band_id": 12,
+        "wn_start": 2941.326172,
+        "wn_end": 2980.663086,
+        "weighted_score": 4.759223698227895,
+        "score_mean_f": 5.117444836804188
+      },
+      {
+        "center": "2900",
+        "band_id": 9,
+        "wn_start": 2821.111328,
+        "wn_end": 2859.914063,
+        "weighted_score": 4.621375731309055,
+        "score_mean_f": 4.969221216461349
+      },
+      {
+        "center": "2900",
+        "band_id": 13,
+        "wn_start": 2981.461914,
+        "wn_end": 3020.435547,
+        "weighted_score": 4.595784431149325,
+        "score_mean_f": 4.941703689407877
+      },
+      {
+        "center": "2900",
+        "band_id": 4,
+        "wn_start": 2620.798828,
+        "wn_end": 2660.577148,
+        "weighted_score": 4.4930650096396265,
+        "score_mean_f": 4.8312526985372335
+      },
+      {
+        "center": "2900",
+        "band_id": 0,
+        "wn_start": 2460.719727,
+        "wn_end": 2500.15918,
+        "weighted_score": 3.5280895804688344,
+        "score_mean_f": 3.7936447101815425
+      },
+      {
+        "center": "2900",
+        "band_id": 19,
+        "wn_start": 3220.75293,
+        "wn_end": 3260.597656,
+        "weighted_score": 2.053215784618904,
+        "score_mean_f": 2.20775890819237
+      },
+      {
+        "center": "2900",
+        "band_id": 3,
+        "wn_start": 2581.532227,
+        "wn_end": 2619.929688,
+        "weighted_score": 1.7946464726248978,
+        "score_mean_f": 1.929727389919245
+      }
+    ]
+  }
+]

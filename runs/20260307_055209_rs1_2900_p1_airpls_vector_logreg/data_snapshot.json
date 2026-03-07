@@ -1,0 +1,31 @@
+{
+  "root_dir": "data/real",
+  "center_filter": "2900",
+  "sample_level": "file_mean",
+  "cache_hit": true,
+  "cache_key": "2b1ec7981e3744fa882c4f30e256d80582c245dc424a03cd13d9f1cd184002dd",
+  "cache_dir": ".cache/raman_hack/2b1ec7981e3744fa882c4f30e256d80582c245dc424a03cd13d9f1cd184002dd",
+  "n_files_total": 239,
+  "n_files_used": 118,
+  "n_samples": 118,
+  "n_features": 1015,
+  "skipped": {
+    "class_filtered": 0,
+    "average_filtered": 2,
+    "center_filtered": 119,
+    "center_mismatch_filtered": 0,
+    "filename_unmatched_filtered": 0,
+    "parse_errors": 0
+  },
+  "class_distribution": {
+    "control": 40,
+    "endo": 36,
+    "exo": 42
+  },
+  "anomaly_examples": {
+    "parse_errors": [],
+    "center_mismatch": [],
+    "filename_unmatched": []
+  },
+  "n_unique_groups": 12
+}
