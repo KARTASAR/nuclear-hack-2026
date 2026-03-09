@@ -1,0 +1,32 @@
+experiment:
+  name: w2_2900_file_mean_airpls_snv_logreg
+  seed: 42
+  output_root: runs
+
+data:
+  root_dir: data/real
+  center: "2900"
+  sample_level: file_mean
+  point_max_per_file: 40
+  exclude_average: true
+  exclude_anomaly_mismatch_center: true
+  allowed_classes: [control, endo, exo]
+
+preprocess:
+  wn_min: 2460.0
+  wn_max: 3285.0
+  baseline_method: airpls
+  baseline_lam: 100000.0
+  baseline_p: 0.01
+  baseline_niter: 15
+  savgol_window: 11
+  savgol_poly: 3
+  normalization: snv
+
+model:
+  model_family: logreg
+  logreg_c: 1.0
+  logreg_max_iter: 3000
+
+validation:
+  n_splits: 5

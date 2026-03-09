@@ -1,0 +1,65 @@
+experiment:
+  name: rgt_2900_file_mean
+  seed: 42
+  output_root: runs
+
+data:
+  root_dir: data/real
+  center: "2900"
+  sample_level: file_mean
+  point_max_per_file: 8
+  exclude_average: true
+  exclude_anomaly_mismatch_center: true
+  strict_filename_match: false
+  require_all_classes: true
+  allowed_classes: [control, endo, exo]
+
+preprocess:
+  wn_min: 2460.0
+  wn_max: 3285.0
+  baseline_method: airpls
+  baseline_lam: 100000.0
+  baseline_p: 0.01
+  baseline_niter: 12
+  despike_enabled: true
+  despike_threshold: 8.0
+  despike_window: 5
+  despike_max_iter: 1
+  savgol_window: 11
+  savgol_poly: 3
+  normalization: snv
+
+model:
+  model_family: rgt_pipeline
+  torch_device: auto
+  torch_batch_size: 32
+  torch_lr: 0.0008
+  torch_weight_decay: 0.0002
+  torch_patience: 5
+  ramannet_segments: 64
+  ramannet_embed_dim: 64
+  ramannet_dropout: 0.2
+  transformer_patch_size: 8
+  transformer_d_model: 128
+  transformer_nhead: 4
+  transformer_num_layers: 3
+  transformer_dim_ff: 256
+  transformer_dropout: 0.1
+  rgt_backbone: auto
+  rgt_unmix_method: nfindr_nnls
+  rgt_unmix_k: 5
+  rgt_pretrain_gan_epochs: 8
+  rgt_pretrain_denoiser_epochs: 12
+  rgt_joint_epochs: 15
+  rgt_lambda_cls: 1.0
+  rgt_lambda_recon: 0.2
+  rgt_lambda_bg: 0.1
+  rgt_lambda_abund: 0.05
+  rgt_teacher_baseline_method: airpls
+  rgt_use_l2_norm: true
+
+validation:
+  n_splits: 5
+  split_kind: stratified_group_kfold
+  split_shuffle: true
+  split_seed: 42

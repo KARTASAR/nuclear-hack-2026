@@ -1,0 +1,42 @@
+data:
+  allowed_classes: [control, endo, exo]
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: "1500"
+  sample_level: file_mean
+experiment:
+  output_root: runs
+  seed: 42
+  name: dlx_1500_single_step_residual
+model:
+  model_family: single_step_residual
+  torch_epochs: 25
+  torch_batch_size: 32
+  torch_lr: 0.001
+  torch_weight_decay: 0.0002
+  torch_patience: 5
+  torch_device: auto
+  single_step_preproc_channels: 32
+  single_step_preproc_blocks: 3
+  single_step_head: ramannet
+  single_step_head_dropout: 0.1
+preprocess:
+  baseline_lam: 100000.0
+  baseline_method: arpls
+  baseline_niter: 12
+  baseline_p: 0.01
+  normalization: msc
+  savgol_poly: 3
+  savgol_window: 11
+  wn_max: 1998.0
+  wn_min: 930.0
+validation:
+  n_splits: 3
+  split_kind: stratified_group_kfold
+  split_shuffle: true
+  split_seed: 42
+  local_holdout_groups: []

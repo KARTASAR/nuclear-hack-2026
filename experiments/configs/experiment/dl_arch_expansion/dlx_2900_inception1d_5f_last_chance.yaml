@@ -1,0 +1,44 @@
+data:
+  allowed_classes: [control, endo, exo]
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: "2900"
+  sample_level: file_mean
+experiment:
+  output_root: runs
+  seed: 42
+  name: dlx_2900_inception1d_5f_last_chance
+model:
+  model_family: inception1d
+  torch_epochs: 25
+  torch_batch_size: 32
+  torch_lr: 0.001
+  torch_weight_decay: 0.0002
+  torch_patience: 5
+  torch_device: auto
+  inception_base_ch: 32
+  inception_dropout: 0.15
+preprocess:
+  baseline_lam: 100000.0
+  baseline_method: airpls
+  baseline_niter: 12
+  baseline_p: 0.01
+  normalization: snv
+  savgol_poly: 3
+  savgol_window: 11
+  wn_max: 3285.0
+  wn_min: 2460.0
+  despike_enabled: true
+  despike_threshold: 8.0
+  despike_window: 5
+  despike_max_iter: 1
+validation:
+  n_splits: 5
+  split_kind: stratified_group_kfold
+  split_shuffle: true
+  split_seed: 42
+  local_holdout_groups: []

@@ -1,0 +1,12 @@
+- name: ch2_symmetric_stretch
+  start_cm1: 2850.0
+  end_cm1: 2860.0
+  concept: lipids
+- name: ch2_ch3_broad_window
+  start_cm1: 2840.0
+  end_cm1: 2940.0
+  concept: lipids_proteins
+- name: unsaturated_lipid_ch
+  start_cm1: 3005.0
+  end_cm1: 3015.0
+  concept: unsaturated_lipids

@@ -1,0 +1,32 @@
+experiment:
+  name: w2_1500_file_mean_arpls_msc_svm
+  seed: 42
+  output_root: runs
+
+data:
+  root_dir: data/real
+  center: "1500"
+  sample_level: file_mean
+  point_max_per_file: 40
+  exclude_average: true
+  exclude_anomaly_mismatch_center: true
+  allowed_classes: [control, endo, exo]
+
+preprocess:
+  wn_min: 930.0
+  wn_max: 1998.0
+  baseline_method: arpls
+  baseline_lam: 100000.0
+  baseline_p: 0.01
+  baseline_niter: 15
+  savgol_window: 11
+  savgol_poly: 3
+  normalization: msc
+
+model:
+  model_family: svm_rbf
+  svm_c: 1.0
+  svm_gamma: scale
+
+validation:
+  n_splits: 5

@@ -1,0 +1,65 @@
+data:
+  allowed_classes: [control, endo, exo]
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: "2900"
+  sample_level: file_mean
+experiment:
+  output_root: runs
+  seed: 42
+  name: xai_2900_transformer_mt_smoke
+model:
+  model_family: spectral_transformer
+  torch_epochs: 8
+  torch_batch_size: 32
+  torch_lr: 0.0008
+  torch_weight_decay: 0.0002
+  torch_patience: 3
+  torch_device: auto
+  transformer_patch_size: 8
+  transformer_d_model: 64
+  transformer_nhead: 4
+  transformer_num_layers: 2
+  transformer_dim_ff: 128
+  transformer_dropout: 0.1
+  transformer_frontend: multitaper
+  multitaper_nw: 3.0
+  multitaper_n_tapers: 5
+  multitaper_remove_dc: true
+preprocess:
+  baseline_lam: 100000.0
+  baseline_method: airpls
+  baseline_niter: 12
+  baseline_p: 0.01
+  normalization: snv
+  savgol_poly: 3
+  savgol_window: 11
+  wn_max: 3285.0
+  wn_min: 2460.0
+  despike_enabled: true
+  despike_threshold: 8.0
+  despike_window: 5
+  despike_max_iter: 1
+validation:
+  n_splits: 3
+  split_kind: stratified_group_kfold
+  split_shuffle: true
+  split_seed: 42
+  local_holdout_groups: []
+explainability:
+  enabled: true
+  methods: [integrated_gradients, attention_rollout]
+  target_models: [final]
+  target_split: cv
+  sample_limit: 2
+  report_top_bands: 5
+  ig_steps: 16
+  lrp_rule: epsilon
+  artifact_threshold: 0.05
+  band_registry: auto
+  save_raw: true
+  save_validation: true

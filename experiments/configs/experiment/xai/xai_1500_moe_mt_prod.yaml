@@ -1,0 +1,64 @@
+data:
+  allowed_classes: [control, endo, exo]
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  strict_filename_match: false
+  center: "1500"
+  sample_level: file_mean
+experiment:
+  output_root: runs
+  seed: 42
+  name: xai_1500_moe_mt_prod
+model:
+  model_family: raman_moe
+  torch_epochs: 25
+  torch_batch_size: 32
+  torch_lr: 0.0008
+  torch_weight_decay: 0.0002
+  torch_patience: 5
+  torch_device: auto
+  multitaper_nw: 3.0
+  multitaper_n_tapers: 5
+  multitaper_remove_dc: true
+  moe_emb_channels: 64
+  moe_n_experts: 3
+  moe_expert_hidden: 64
+  moe_use_sectors_for_gating: true
+  moe_sector_reduce: mean
+  moe_learnable_proj: true
+  moe_proj_dim: 32
+  moe_n_freq_bins: 0
+  moe_sector_source: hybrid
+  moe_sector_bounds: []
+preprocess:
+  baseline_lam: 100000.0
+  baseline_method: arpls
+  baseline_niter: 12
+  baseline_p: 0.01
+  normalization: msc
+  savgol_poly: 3
+  savgol_window: 11
+  wn_max: 1998.0
+  wn_min: 930.0
+validation:
+  n_splits: 5
+  split_kind: stratified_group_kfold
+  split_shuffle: true
+  split_seed: 42
+  local_holdout_groups: []
+explainability:
+  enabled: true
+  methods: [integrated_gradients]
+  target_models: [folds, final]
+  target_split: cv
+  sample_limit: 8
+  report_top_bands: 5
+  ig_steps: 32
+  lrp_rule: epsilon
+  artifact_threshold: 0.05
+  band_registry: auto
+  save_raw: true
+  save_validation: true

@@ -1,0 +1,11 @@
+# Runtime caches and temporary files
+.cache/
+.tmp_configs/
+catboost_info/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local run artifacts (keep directory tracked)
+runs/*
+!runs/.gitkeep

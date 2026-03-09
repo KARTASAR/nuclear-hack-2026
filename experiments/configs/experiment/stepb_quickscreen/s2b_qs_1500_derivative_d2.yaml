@@ -1,0 +1,54 @@
+data:
+  allowed_classes:
+  - control
+  - endo
+  - exo
+  center: '1500'
+  exclude_anomaly_mismatch_center: true
+  exclude_average: true
+  point_max_per_file: 8
+  require_all_classes: true
+  root_dir: data/real
+  sample_level: file_mean
+  strict_filename_match: false
+experiment:
+  name: s2b_qs_1500_derivative_d2
+  output_root: runs
+  seed: 42
+model:
+  depth: 6
+  eval_metric: TotalF1
+  iterations: 50
+  l2_leaf_reg: 3.0
+  learning_rate: 0.08
+  loss_function: MultiClass
+  model_family: catboost
+  verbose: false
+preprocess:
+  baseline_lam: 100000.0
+  baseline_method: arpls
+  baseline_niter: 12
+  baseline_p: 0.01
+  normalization: msc
+  savgol_poly: 3
+  savgol_window: 11
+  wn_max: 1998.0
+  wn_min: 930.0
+  despike_enabled: false
+  despike_threshold: 8.0
+  despike_window: 5
+  despike_max_iter: 1
+  baseline_use_pybaselines: true
+  baseline_morph_window: 51
+  baseline_snip_max_half_window: 40
+  derivative_order: 2
+  outlier_filter: none
+  outlier_z_threshold: 4.5
+  outlier_min_keep: 12
+  outlier_min_per_class: 2
+validation:
+  local_holdout_groups: []
+  n_splits: 5
+  split_kind: group_kfold
+  split_seed: 42
+  split_shuffle: false
