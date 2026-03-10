@@ -1,7 +1,0 @@
-priority,experiment,best_macro_f1,delta_vs_prev_coarse_fusion,key_detail,artifact
-P1,fine alpha (0.01) on current winner pair,0.6027123831016739,0.009212383101673827,alpha_1500=0.11,runs/fusion_sweep_dl_seed42_alpha001.csv
-P1,fine alpha seed-pair stability (11/22/33),0.6205438077817069,0.027043807781706897,"mean=0.6205, std=0.0320",runs/fusion_sweep_dl_seed_stability_alpha001_summary.csv
-P2,seed-ensemble per-window + fusion,0.7804072380104037,0.18690723801040365,"1500_top4 + 2900_top3, alpha_1500=0.08",runs/dl_seed_ensemble_fusion_best_20260306.csv
-P3,HPO ramannet1500 (narrow),0.6178931109051592,0.026362323151461142,p3_rmn_lr0015,runs/p3_hpo_ramannet1500_summary_20260306.csv
-P4,HPO spectral_transformer2900 (narrow),0.5072222222222221,0.014468599033816365,p4_tr_patch8,runs/p4_hpo_transformer2900_summary_20260306.csv
-P1+P3+P4,fusion of tuned best 1500+2900,0.6211488769628305,0.02764887696283047,tuned_best,runs/fusion_tuned_pair_summary_20260306.csv

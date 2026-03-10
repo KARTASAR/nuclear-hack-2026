@@ -1,2 +1,0 @@
-status,reason,run_1500,run_2900,alpha_1500,alpha_2900,macro_f1,balanced_accuracy,accuracy,auc_ovr_macro
-skipped,no_phase2_candidates_passed,,,,,,,,

@@ -1,2 +1,0 @@
-status,reason,center,model_family,n_runs,macro_f1_mean,macro_f1_std,balanced_accuracy_mean,balanced_accuracy_std
-skipped,no_phase1_candidates_passed,all,all,0,,,,

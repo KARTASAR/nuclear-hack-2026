@@ -1,23 +1,29 @@
-# Experiments: Isolated Research Layer
+# Эксперименты: Изолированный исследовательский слой
 
-`experiments/` is the standalone laboratory layer for research hypotheses and extended validation.
-It is isolated from production paths (`src/`, `configs/`, `scripts/`, `docs/`) and uses its own runtime/output space.
+`experiments/` — это автономный лабораторный слой для проверки исследовательских гипотез и расширенной валидации.
+Он изолирован от производственных путей (`src/`, `configs/`, `scripts/`, `docs/`) и использует собственное пространство выполнения/вывода.
 
-## Key Documents
+## Ключевые документы
 
-1. `experiments/docs/EXPERIMENTS_APPENDIX.md` — factual continuation of the main experiment story (`11.*` sections).
-2. `experiments/docs/REPRODUCIBILITY.md` — reproducible runs and command patterns for this layer.
-3. `experiments/docs/SOURCES.md` — source map for the experimental branch.
-4. `experiments/docs/general/*` — historical detailed logs and design tickets.
-5. `experiments/docs/artifacts/*` — lightweight CSV/JSON summaries referenced by docs.
+1. `experiments/docs/EXPERIMENTS_APPENDIX.md` — фактическое продолжение основной истории эксперимента (разделы `11.*`).
 
-## Module Map
+2. `experiments/docs/REPRODUCIBILITY.md` — воспроизводимые запуски и шаблоны команд для этого слоя.
 
-1. `RGT/RSPSSL`: unmixing-oriented pipeline, end-to-end helpers, unmixing visualization.
-2. `multitaper/MoE`: experimental spectral frontend and sector-aware mixture-of-experts.
-3. `XAI`: batch explainability, validation reports, and spectral-band summaries.
+3. `experiments/docs/SOURCES.md` — карта исходного кода для экспериментальной ветки.
 
-## Layout
+4. `experiments/docs/general/*` — подробные исторические журналы и проектные задания.
+
+5. `experiments/docs/artifacts/*` — легковесные CSV/JSON-резюме, на которые ссылается документация.
+
+## Карта модулей
+
+1. `RGT/RSPSSL`: ориентированный на разделение смесей, сквозные вспомогательные функции, визуализация разделения смесей.
+
+2. `multitaper/MoE`: экспериментальный спектральный интерфейс и сегментированный инструмент для анализа смесей.
+
+3. `XAI`: пакетная объяснимость, отчеты о валидации и сводки по спектральным диапазонам.
+
+## Структура
 
 ```text
 experiments/
@@ -36,10 +42,10 @@ experiments/
 
 ## Runtime Isolation
 
-All experimental scripts bootstrap `experiments/src` first in `sys.path`.
-Default output root is `experiments/runs`.
+Все экспериментальные скрипты сначала загружают `experiments/src` в `sys.path`.
+Корневая папка вывода по умолчанию — `experiments/runs`.
 
-Override example:
+Пример переопределения:
 
 ```bash
 EXPERIMENTS_OUTPUT_ROOT=experiments/runs_alt \
@@ -47,9 +53,9 @@ EXPERIMENTS_OUTPUT_ROOT=experiments/runs_alt \
   --config experiments/configs/experiment/v1_smoke_center1500_fast.yaml
 ```
 
-## Main CLI Commands
+## Основные команды CLI
 
-### 1) Single run
+### 1) Один запуск
 
 ```bash
 # canonical (script-path)
@@ -61,7 +67,7 @@ EXPERIMENTS_OUTPUT_ROOT=experiments/runs_alt \
   --config experiments/configs/experiment/v1_smoke_center1500_fast.yaml
 ```
 
-### 2) Parallel sweep
+### 2) Параллельный запуск
 
 ```bash
 # canonical (script-path)
@@ -75,7 +81,7 @@ EXPERIMENTS_OUTPUT_ROOT=experiments/runs_alt \
   --workers 2 --continue-on-error
 ```
 
-### 3) Full E2E (RGT pair + fusion)
+### 3) Полный запуск pipeline вместе с обучением GAN для очистки спектра и дальнейшей классификации
 
 ```bash
 # canonical (script-path)
@@ -89,16 +95,16 @@ EXPERIMENTS_OUTPUT_ROOT=experiments/runs_alt \
   --config-2900 experiments/configs/experiment/rgt/rgt_2900_file_mean.yaml
 ```
 
-### 4) Unmixing visualization
+### 4) Визуализация разделения спектров
 
-Select concrete run directories first:
+Сначала выберите конкретные каталоги запусков:
 
 ```bash
 RUN_1500="$(find experiments/runs -mindepth 1 -maxdepth 1 -type d -name '*1500*' | sort | tail -n 1)"
 RUN_2900="$(find experiments/runs -mindepth 1 -maxdepth 1 -type d -name '*2900*' | sort | tail -n 1)"
 ```
 
-Then run:
+Затем:
 
 ```bash
 # canonical (script-path)
@@ -112,9 +118,9 @@ Then run:
   --run-dir "$RUN_2900"
 ```
 
-### 5) Batch explainability + validation
+### 5) Интерпретация и валидация
 
-Select a concrete run directory:
+Выберите конкретный каталог запуска:
 
 ```bash
 RUN_DIR="$(find experiments/runs -mindepth 1 -maxdepth 1 -type d | sort | tail -n 1)"
@@ -134,11 +140,3 @@ RUN_DIR="$(find experiments/runs -mindepth 1 -maxdepth 1 -type d | sort | tail -
   --run-dir "$RUN_DIR"
 ```
 
-## Legacy Ported CLIs
-
-Ported to `raman_hack` runtime and kept as active interfaces:
-
-1. `experiments/scripts/train_all_models.py`
-2. `experiments/scripts/preprocess_data.py`
-3. `experiments/scripts/run_pipeline_with_fake_data.py`
-4. `experiments/scripts/explain_model.py`
